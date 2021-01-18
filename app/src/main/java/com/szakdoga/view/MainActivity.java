@@ -9,7 +9,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.szakdoga.R;
-import com.szakdoga.view.GenderActivity;
 
 public class MainActivity extends AppCompatActivity {
 
