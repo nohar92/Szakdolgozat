@@ -6,7 +6,7 @@
 
 
     <Button
-        android:id="@+id/MaleOfferButton"
+        android:id="@+id/maleOfferButton"
         android:layout_width="130dp"
         android:layout_height="60dp"
         android:layout_alignParentStart="true"
@@ -19,7 +19,7 @@
         android:textSize="12sp" />
 
     <Button
-        android:id="@+id/MaleBackButton"
+        android:id="@+id/maleBackButton"
         android:layout_width="130dp"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
