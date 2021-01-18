@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.GenderActivity" />
+        <activity android:name=".view.MaleActivity" />
     </application>
 
 </manifest>
