@@ -5,4 +5,6 @@
     <string name="Male">Male</string>
     <string name="Female">Female</string>
     <string name="genderChoose">Choose your gender!</string>
+    <string name="offer">Offer</string>
+    <string name="back">Back</string>
 </resources>
