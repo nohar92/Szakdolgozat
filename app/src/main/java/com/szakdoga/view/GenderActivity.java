@@ -1,6 +1,8 @@
-package com.szakdoga;
+package com.szakdoga.view;
 
 import android.os.Bundle;
+
+import com.szakdoga.R;
 
 public class GenderActivity extends MainActivity {
 
