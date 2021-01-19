@@ -14,6 +14,7 @@
     <string name="waist_circumference_cm">Waist circumference(cm)</string>
     <string name="activity_level">Activity level</string>
     <string name="fill_the_details_below">Fill the details below</string>
+    <string name="hip_circumference_cm">Hip circumference(cm)</string>
 
     <string-array name="activity_levels">
         <item>Sedentary</item>
