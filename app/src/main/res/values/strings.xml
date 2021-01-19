@@ -7,4 +7,13 @@
     <string name="genderChoose">Choose your gender!</string>
     <string name="offer">Offer</string>
     <string name="back">Back</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="enter_your_weight_kg">Enter your weight(kg)</string>
+    <string name="enter_your_height_cm">Enter your height(cm)</string>
+    <string name="age">Age</string>
+    <string name="weight_kg">Weight(kg)</string>
+    <string name="height_cm">Height(cm)</string>
+    <string name="neck_circumference_cm">Neck circumference(cm)</string>
+    <string name="waist_circumference_cm">Waist circumference(cm)</string>
+    <string name="activity_level">Activity level</string>
 </resources>
