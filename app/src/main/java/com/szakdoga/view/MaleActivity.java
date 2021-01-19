@@ -10,7 +10,8 @@ import android.widget.Spinner;
 
 import com.szakdoga.R;
 
-public class MaleActivity extends GenderActivity {//implements AdapterView.OnItemSelectedListener {
+public class MaleActivity extends GenderActivity {
+    //implements AdapterView.OnItemSelectedListener {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +42,8 @@ public class MaleActivity extends GenderActivity {//implements AdapterView.OnIte
 /*
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+        // An item was selected. You can retrieve the selected item using
+        // parent.getItemAtPosition(pos)
     }
 
     @Override
