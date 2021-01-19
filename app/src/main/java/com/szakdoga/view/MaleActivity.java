@@ -3,7 +3,6 @@ package com.szakdoga.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -36,7 +35,7 @@ public class MaleActivity extends GenderActivity {
                 this, R.array.activity_levels, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-     //   spinner.setOnItemSelectedListener(this);
+        //spinner.setOnItemSelectedListener(this);
 
     }
 /*
