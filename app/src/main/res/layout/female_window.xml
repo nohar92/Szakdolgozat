@@ -163,7 +163,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Spinner
-            android:id="@+id/activitySpinner"
+            android:id="@+id/womanActivitySpinner"
             android:layout_width="205dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"/>
