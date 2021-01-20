@@ -9,7 +9,7 @@ import android.widget.Spinner;
 
 import com.szakdoga.R;
 
-public class FemaleActivity extends GenderActivity {
+public class DetailsActivity extends GenderActivity {
     //implements AdapterView.OnItemSelectedListener {
 
     public void onCreate(Bundle savedInstanceState) {
