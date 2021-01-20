@@ -14,7 +14,7 @@ public class DetailsActivity extends GenderActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.female_window);
+        setContentView(R.layout.details_window);
 
         // Create back button and its clickListener to step back GenderActivity
         Button femaleBack = findViewById(R.id.femaleBackButton);
@@ -30,7 +30,7 @@ public class DetailsActivity extends GenderActivity {
         // Specify the layout to use when the list of choices appears
         // Apply the adapter to the spinner
 
-        Spinner spinner = (Spinner) findViewById(R.id.womanActivitySpinner);
+        Spinner spinner = (Spinner) findViewById(R.id.activitySpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this, R.array.activity_levels, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
