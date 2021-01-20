@@ -35,7 +35,7 @@
 
     <Button
         android:id="@+id/calculate"
-        android:layout_width="130dp"
+        android:layout_width="140dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:text="@string/let_s_calculate"
