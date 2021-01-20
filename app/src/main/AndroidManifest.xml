@@ -9,15 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Szakdoga">
-        <activity android:name=".view.MainActivity">
+        <activity android:name=".view.MainActivity"
+            android:label="MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.GenderActivity" />
-        <activity android:name=".view.MaleActivity" />
-        <activity android:name=".view.FemaleActivity" />
+        <activity android:name=".view.GenderActivity"
+            android:label="GenderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.MaleActivity"
+            android:label="MaleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.FemaleActivity"
+            android:label="FemaleActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
