@@ -23,6 +23,8 @@
         <activity android:name=".view.DetailsActivity"
             android:label="Fill the details below"
             android:screenOrientation="portrait"/>
+        <activity android:name=".view.FunctionsActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
