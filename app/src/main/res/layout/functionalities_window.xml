@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="550dp"
+        android:backgroundTint="#008080"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/choose_from_the_options_below"
+        android:textAlignment="center"
+        android:textColor="#008080"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/menu_offer"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="#008080"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/menu_offer"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/calculations"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="#008080"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/calculations"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/change_details"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="#008080"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/change_details"
+        android:textSize="12sp" />
+
+
+
+</RelativeLayout>
