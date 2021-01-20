@@ -29,14 +29,14 @@ public class FemaleActivity extends GenderActivity {
         // Create an ArrayAdapter using the string array and a default spinner layout
         // Specify the layout to use when the list of choices appears
         // Apply the adapter to the spinner
-/*
+
         Spinner spinner = (Spinner) findViewById(R.id.womanActivitySpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this, R.array.activity_levels, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         //   spinner.setOnItemSelectedListener(this);
-*/
+
     }
 /*
     @Override
