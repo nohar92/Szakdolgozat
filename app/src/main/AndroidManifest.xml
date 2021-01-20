@@ -20,9 +20,6 @@
         <activity android:name=".view.GenderActivity"
             android:label="Regimen"
             android:screenOrientation="portrait"/>
-        <activity android:name=".view.MaleActivity"
-            android:label="Fill the details below"
-            android:screenOrientation="portrait"/>
         <activity android:name=".view.FemaleActivity"
             android:label="Fill the details below"
             android:screenOrientation="portrait"/>
