@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".view.GenderActivity" />
         <activity android:name=".view.MaleActivity" />
+        <activity android:name=".view.FemaleActivity" />
     </application>
 
 </manifest>
