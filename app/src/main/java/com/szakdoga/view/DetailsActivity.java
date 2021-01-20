@@ -26,6 +26,16 @@ public class DetailsActivity extends GenderActivity {
             }
         });
 
+        // Create save button and its clickListener to save datas and step forward to FunctionsActivity
+        Button saveAndForward = findViewById(R.id.saveButton);
+        saveAndForward.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent intent = new Intent(view.getContext(), FunctionsActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
         // Create an ArrayAdapter using the string array and a default spinner layout
         // Specify the layout to use when the list of choices appears
         // Apply the adapter to the spinner
