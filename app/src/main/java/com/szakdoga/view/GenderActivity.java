@@ -18,14 +18,14 @@ public class GenderActivity extends MainActivity {
         Button male = findViewById(R.id.maleButton);
         male.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(view.getContext(), MaleActivity.class);
+                Intent intent = new Intent(view.getContext(), DetailsActivity.class);
                 startActivity(intent);            }
         });
 
         Button female = findViewById(R.id.femaleButton);
         female.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(view.getContext(), FemaleActivity.class);
+                Intent intent = new Intent(view.getContext(), DetailsActivity.class);
                 startActivity(intent);
 
             }
