@@ -1,6 +1,346 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tooltip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/click_on_the_pictures_for_the_recipe"
+        android:textAlignment="center"
+        android:textColor="#008080"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tooltip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:stretchColumns="*">
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:text="Menu 1"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="20sp" />
+
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/breakfastbuttonM1"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+                        android:id="@+id/breakfastmenu1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textColor="#008080"
+                        android:textSize="15sp"
+
+                        />
+
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/lunchbuttonM1"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+
+                        android:id="@+id/lunchm1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/dinnerbuttonM1"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+
+                        android:id="@+id/dinnerm1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:stretchColumns="*">
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:text="Menu 2"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="20sp" />
+
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/breakfastbuttonM2"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+                        android:id="@+id/breakfastmenu2"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textColor="#008080"
+                        android:textSize="15sp"
+
+                        />
+
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/lunchbuttonM2"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+
+                        android:id="@+id/lunchm2"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/dinnerbuttonM2"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+
+                        android:id="@+id/dinnerm2"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:stretchColumns="*">
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:text="Menu 3"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="20sp" />
+
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/breakfastbuttonM3"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+                        android:id="@+id/breakfastmenu3"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textColor="#008080"
+                        android:textSize="15sp"
+
+                        />
+
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/lunchbuttonM3"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+
+                        android:id="@+id/lunchm3"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+
+
+                    <ImageButton
+                        android:id="@+id/dinnerbuttonM3"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/mlogo" />
+
+                    <TextView
+
+                        android:id="@+id/dinnerm3"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="FoodName"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginEnd="140dp"
+                android:backgroundTint="#008080"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/back"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
