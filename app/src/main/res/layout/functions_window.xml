@@ -19,16 +19,7 @@
         android:textColor="#008080"
         android:textSize="32sp" />
 
-    <Button
-        android:id="@+id/menuOfferButton"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="250dp"
-        android:backgroundTint="#008080"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/menu_offer"
-        android:textSize="12sp" />
+
 
     <Button
         android:id="@+id/calculationsButton"

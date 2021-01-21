@@ -14,15 +14,6 @@ public class FunctionsActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.functions_window);
 
-        // Create a menu button and its clickListener to step forward MenuOfferActivity
-        Button menuOffer = findViewById(R.id.menuOfferButton);
-        menuOffer.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intent = new Intent(view.getContext(), MenuOfferActivity.class);
-                startActivity(intent);
-
-            }
-        });
 
         // Create calculation button and its clickListener to step forward CalculationsActivity
         Button calculation = findViewById(R.id.calculationsButton);
