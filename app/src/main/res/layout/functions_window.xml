@@ -20,7 +20,7 @@
         android:textSize="32sp" />
 
     <Button
-        android:id="@+id/menu_offer"
+        android:id="@+id/menuOfferButton"
         android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
@@ -31,7 +31,7 @@
         android:textSize="12sp" />
 
     <Button
-        android:id="@+id/calculations"
+        android:id="@+id/calculationsButton"
         android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
@@ -42,7 +42,7 @@
         android:textSize="12sp" />
 
     <Button
-        android:id="@+id/change_details"
+        android:id="@+id/changeDetailsButton"
         android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
