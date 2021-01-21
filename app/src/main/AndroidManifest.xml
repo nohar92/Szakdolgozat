@@ -25,6 +25,8 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".view.FunctionsActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".view.CalculationsActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
