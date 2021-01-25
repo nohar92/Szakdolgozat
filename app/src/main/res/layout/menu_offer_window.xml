@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,8 +9,8 @@
         android:id="@+id/tooltip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
 
         android:layout_marginTop="27dp"
@@ -26,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tooltip"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="30dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -34,15 +33,19 @@
             android:orientation="vertical">
 
             <TableLayout
-                android:id="@+id/table1"
+                android:id="@+id/menu_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_weight="1"
+
                 android:padding="10dp"
                 android:stretchColumns="*">
 
-                <TableRow android:background="@drawable/border">
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border">
 
 
                     <TextView
@@ -55,18 +58,23 @@
 
                 </TableRow>
 
-                <TableRow android:background="@drawable/border">
 
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-                    <ImageButton
-                        android:id="@+id/breakfastbuttonM1"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/first_meal_1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/palacsinta" />
 
                     <TextView
-                        android:id="@+id/breakfastmenu1"
+                        android:id="@+id/first_meal_name_1"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -79,19 +87,23 @@
 
                 </TableRow>
 
-                <TableRow android:background="@drawable/border">
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-
-                    <ImageButton
-                        android:id="@+id/lunchbuttonM1"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/second_meal_1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/hamburger" />
 
                     <TextView
 
-                        android:id="@+id/lunchm1"
+                        android:id="@+id/second_meal_name_1"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -104,21 +116,21 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/border">
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-
-                    <ImageButton
-                        android:id="@+id/dinnerbuttonM1"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/third_meal_1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/hamburger" />
 
                     <TextView
 
-                        android:id="@+id/dinnerm1"
+                        android:id="@+id/third_meal_name_1"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -137,12 +149,16 @@
                 android:id="@+id/table2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="40dp"
                 android:layout_weight="1"
+
                 android:padding="10dp"
                 android:stretchColumns="*">
 
-                <TableRow android:background="@drawable/border">
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border">
 
 
                     <TextView
@@ -155,18 +171,23 @@
 
                 </TableRow>
 
-                <TableRow android:background="@drawable/border">
 
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-                    <ImageButton
-                        android:id="@+id/breakfastbuttonM2"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/first_meal_2"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/palacsinta" />
 
                     <TextView
-                        android:id="@+id/breakfastmenu2"
+                        android:id="@+id/first_meal_name_2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -179,19 +200,23 @@
 
                 </TableRow>
 
-                <TableRow android:background="@drawable/border">
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-
-                    <ImageButton
-                        android:id="@+id/lunchbuttonM2"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/second_meal_2"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/hamburger" />
 
                     <TextView
 
-                        android:id="@+id/lunchm2"
+                        android:id="@+id/second_meal_name_2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -204,21 +229,20 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/border">
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-
-                    <ImageButton
-                        android:id="@+id/dinnerbuttonM2"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/third_meal_2"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/hamburger" />
 
                     <TextView
-
-                        android:id="@+id/dinnerm2"
+                        android:id="@+id/third_meal_name_2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -230,19 +254,23 @@
 
                 </TableRow>
 
-
             </TableLayout>
 
+
             <TableLayout
-                android:id="@+id/table3"
+                android:id="@+id/table1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="40dp"
                 android:layout_weight="1"
+
                 android:padding="10dp"
                 android:stretchColumns="*">
 
-                <TableRow android:background="@drawable/border">
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border">
 
 
                     <TextView
@@ -255,18 +283,23 @@
 
                 </TableRow>
 
-                <TableRow android:background="@drawable/border">
 
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-                    <ImageButton
-                        android:id="@+id/breakfastbuttonM3"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/first_meal_3"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/palacsinta" />
 
                     <TextView
-                        android:id="@+id/breakfastmenu3"
+                        android:id="@+id/first_meal_name_3"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -279,19 +312,23 @@
 
                 </TableRow>
 
-                <TableRow android:background="@drawable/border">
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-
-                    <ImageButton
-                        android:id="@+id/lunchbuttonM3"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/second_meal_3"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/hamburger" />
 
                     <TextView
 
-                        android:id="@+id/lunchm3"
+                        android:id="@+id/second_meal_name_3"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -304,21 +341,21 @@
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/border">
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
 
-
-                    <ImageButton
-                        android:id="@+id/dinnerbuttonM3"
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/third_meal_3"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        app:srcCompat="@drawable/mlogo" />
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/hamburger" />
 
                     <TextView
 
-                        android:id="@+id/dinnerm3"
+                        android:id="@+id/third_meal_name_3"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
@@ -327,7 +364,10 @@
                         android:textColor="#008080"
                         android:textSize="15sp" />
 
+
                 </TableRow>
+
+
             </TableLayout>
 
             <Button
