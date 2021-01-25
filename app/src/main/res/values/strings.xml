@@ -4,8 +4,7 @@
     <string name="your_very_new_life_just_begin">Your very new life just begin!</string>
     <string name="Male">Male</string>
     <string name="Female">Female</string>
-    <string name="genderChoose">Choose your gender!</string>
-    <string name="offer">Offer</string>
+    <string name="genderChoose">Give your name and gender!</string>
     <string name="back">Back</string>
     <string name="age">Age</string>
     <string name="weight_kg">Weight(kg)</string>
@@ -13,7 +12,18 @@
     <string name="neck_circumference_cm">Neck circumference(cm)</string>
     <string name="waist_circumference_cm">Waist circumference(cm)</string>
     <string name="activity_level">Activity level</string>
-    <string name="hip_circumference_cm">Hip circumference(cm)</string>
+    <string name="hip_circumference_cm">Hip circumference(cm)\n(only for women)</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="menu_offer">Menu Offer</string>
+    <string name="calculations">Calculations</string>
+    <string name="change_details">Change Details</string>
+    <string name="choose_from_the_options_below">Choose from the options below</string>
+    <string name="macronutrient_requirement">Macronutrient requirement</string>
+    <string name="body_fat">Body fat %</string>
+    <string name="bmi">BMI</string>
+    <string name="bmr">BMR</string>
+    <string name="click_on_the_pictures_for_the_recipe">Click on the pictures for the recipe</string>
 
     <string-array name="activity_levels">
         <item>Sedentary</item>
