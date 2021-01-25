@@ -24,6 +24,7 @@
     <string name="bmi">BMI</string>
     <string name="bmr">BMR</string>
     <string name="click_on_the_pictures_for_the_recipe">Click on the pictures for the recipe</string>
+    <string name="gender">Gender</string>
 
     <string-array name="activity_levels">
         <item>Sedentary</item>
