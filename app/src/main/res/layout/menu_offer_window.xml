@@ -99,7 +99,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/hamburger" />
+                        android:src="@drawable/mosolygos_reggeli" />
 
                     <TextView
 
@@ -369,17 +369,6 @@
 
 
             </TableLayout>
-
-            <Button
-                android:id="@+id/backButton"
-                android:layout_width="130dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="140dp"
-                android:layout_marginEnd="140dp"
-                android:backgroundTint="#008080"
-                android:fontFamily="sans-serif-black"
-                android:text="@string/back"
-                android:textSize="12sp" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

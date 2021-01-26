@@ -2,8 +2,11 @@ package com.szakdoga.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import androidx.appcompat.app.ActionBar;
 
 import com.szakdoga.R;
 
@@ -12,19 +15,32 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MenuOfferActivity extends FunctionsActivity{
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
+    }
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_offer_window);
 
-        // Create back button and its clickListener to step back FunctionsActivity
-        Button back = findViewById(R.id.backButton);
-        back.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), FunctionsActivity.class);
-                startActivity(intent);
+        // calling the action bar
+        ActionBar actionBar = getSupportActionBar();
 
-            }
-        });
+        // showing the back button in action bar
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
 
         // Create button and its clickListener to step forward RecipeActivity
         CircleImageView first = findViewById(R.id.first_meal_1);
@@ -116,4 +132,6 @@ public class MenuOfferActivity extends FunctionsActivity{
             }
         });
     }
+
+
 }
