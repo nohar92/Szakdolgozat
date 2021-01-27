@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <TextView
         android:id="@+id/tooltip"
         android:layout_width="wrap_content"
@@ -12,7 +11,6 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-
         android:layout_marginTop="27dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/click_on_the_pictures_for_the_recipe"
@@ -37,8 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:layout_weight="1"
-
+                android:shrinkColumns="1"
                 android:padding="10dp"
                 android:stretchColumns="*">
 
@@ -47,17 +44,13 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/border">
 
-
                     <TextView
                         android:fontFamily="sans-serif-black"
                         android:text="Menu 1"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="20sp" />
-
-
                 </TableRow>
-
 
                 <TableRow
                     android:layout_marginBottom="5dp"
@@ -71,20 +64,19 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/palacsinta" />
+                        android:src="@drawable/mosolygos_reggeli" />
 
                     <TextView
                         android:id="@+id/first_meal_name_1"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="FoodName"
+                        android:text="Póréhagymás-burgonyás frittata"
+                        android:ellipsize="none"
+                        android:maxLines="100"
+                        android:scrollHorizontally="false"
                         android:textColor="#008080"
-                        android:textSize="15sp"
-
-                        />
-
-
+                        android:textSize="15sp" />
                 </TableRow>
 
                 <TableRow
@@ -99,7 +91,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/mosolygos_reggeli" />
+                        android:src="@drawable/hamburger" />
 
                     <TextView
 
@@ -111,8 +103,6 @@
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
-
-
                 </TableRow>
 
                 <TableRow
@@ -129,7 +119,6 @@
                         android:src="@drawable/hamburger" />
 
                     <TextView
-
                         android:id="@+id/third_meal_name_1"
                         android:layout_column="1"
                         android:layout_gravity="center"
@@ -138,11 +127,7 @@
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
-
-
                 </TableRow>
-
-
             </TableLayout>
 
             <TableLayout
@@ -151,7 +136,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_weight="1"
-
                 android:padding="10dp"
                 android:stretchColumns="*">
 
@@ -160,17 +144,13 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/border">
 
-
                     <TextView
                         android:fontFamily="sans-serif-black"
                         android:text="Menu 2"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="20sp" />
-
-
                 </TableRow>
-
 
                 <TableRow
                     android:layout_marginBottom="5dp"
@@ -193,11 +173,7 @@
                         android:fontFamily="sans-serif-black"
                         android:text="FoodName"
                         android:textColor="#008080"
-                        android:textSize="15sp"
-
-                        />
-
-
+                        android:textSize="15sp" />
                 </TableRow>
 
                 <TableRow
@@ -215,7 +191,6 @@
                         android:src="@drawable/hamburger" />
 
                     <TextView
-
                         android:id="@+id/second_meal_name_2"
                         android:layout_column="1"
                         android:layout_gravity="center"
@@ -224,8 +199,6 @@
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
-
-
                 </TableRow>
 
                 <TableRow
@@ -250,12 +223,8 @@
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
-
-
                 </TableRow>
-
             </TableLayout>
-
 
             <TableLayout
                 android:id="@+id/table1"
@@ -263,7 +232,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_weight="1"
-
                 android:padding="10dp"
                 android:stretchColumns="*">
 
@@ -272,17 +240,13 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/border">
 
-
                     <TextView
                         android:fontFamily="sans-serif-black"
                         android:text="Menu 3"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="20sp" />
-
-
                 </TableRow>
-
 
                 <TableRow
                     android:layout_marginBottom="5dp"
@@ -305,11 +269,7 @@
                         android:fontFamily="sans-serif-black"
                         android:text="FoodName"
                         android:textColor="#008080"
-                        android:textSize="15sp"
-
-                        />
-
-
+                        android:textSize="15sp" />
                 </TableRow>
 
                 <TableRow
@@ -327,7 +287,6 @@
                         android:src="@drawable/hamburger" />
 
                     <TextView
-
                         android:id="@+id/second_meal_name_3"
                         android:layout_column="1"
                         android:layout_gravity="center"
@@ -336,8 +295,6 @@
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
-
-
                 </TableRow>
 
                 <TableRow
@@ -354,7 +311,6 @@
                         android:src="@drawable/hamburger" />
 
                     <TextView
-
                         android:id="@+id/third_meal_name_3"
                         android:layout_column="1"
                         android:layout_gravity="center"
@@ -363,8 +319,6 @@
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
-
-
                 </TableRow>
 
 
@@ -372,4 +326,3 @@
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
-
