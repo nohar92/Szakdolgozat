@@ -47,7 +47,7 @@ public class DetailsActivity extends MainActivity {
         saveAndForward = findViewById(R.id.save_button);
         saveAndForward.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-
+/*
                 String name = txtName.getText().toString().trim();
                 String gender = txtGender.getText().toString().trim();
                 String age = txtAge.getText().toString().trim();
@@ -82,6 +82,9 @@ public class DetailsActivity extends MainActivity {
                     Intent intent = new Intent(view.getContext(), FunctionsActivity.class);
                     startActivity(intent);
                 }
+*/
+                Intent intent = new Intent(view.getContext(), FunctionsActivity.class);
+                startActivity(intent);
             }
         });
         /*
