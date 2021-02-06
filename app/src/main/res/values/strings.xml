@@ -1,30 +1,41 @@
 <resources>
     <string name="app_name">Regimen</string>
-    <string name="let_s_calculate">Let\'s calculate</string>
-    <string name="your_very_new_life_just_begin">Your very new life just begin!</string>
-    <string name="Male">Male</string>
-    <string name="Female">Female</string>
-    <string name="genderChoose">Give your name and gender!</string>
-    <string name="back">Back</string>
-    <string name="age">Age</string>
-    <string name="weight_kg">Weight(kg)</string>
-    <string name="height_cm">Height(cm)</string>
-    <string name="neck_circumference_cm">Neck circumference(cm)</string>
-    <string name="waist_circumference_cm">Waist circumference(cm)</string>
-    <string name="activity_level">Activity level</string>
-    <string name="hip_circumference_cm">Hip circumference(cm)\n(only for women)</string>
-    <string name="name">Name</string>
-    <string name="save">Save</string>
-    <string name="menu_offer">Menu Offer</string>
-    <string name="calculations">Calculations</string>
-    <string name="change_details">Change Details</string>
-    <string name="choose_from_the_options_below">Choose from the options below</string>
-    <string name="macronutrient_requirement">Macronutrient requirement</string>
-    <string name="body_fat">Body fat %</string>
+    <string name="uj_elet">Egy új élet kezdődik!</string>
+    <string name="kezdj_nk_bele">Kezdjünk bele</string>
+    <string name="name">Név</string>
+    <string name="gender">Nem</string>
+    <string name="age">Kor</string>
+    <string name="weight">Súly(kg)</string>
+    <string name="height">Magasság(cm)</string>
+    <string name="neck">Nyakkörfogat(cm)</string>
+    <string name="waist">Derékbőség(cm)</string>
+    <string name="hip">Csípőkörfogat(cm)</string>
+    <string name="activity_level">Aktivitási szint</string>
+
+    <string name="Male">Férfi</string>
+    <string name="Female">Nő</string>
+    <string name="back">Vissza</string>
+    <string name="save">Mentés</string>
+    <string name="menu_offer">Menu ajánlás</string>
+    <string name="calculations">Számítások</string>
+    <string name="change_details">Adatok változtatása</string>
+    <string name="choose_from_the_options_below">Válassz az alábbi lehetőségek közül!</string>
+    <string name="body_fat">Testzsír %</string>
     <string name="bmi">BMI</string>
     <string name="bmr">BMR</string>
-    <string name="click_on_the_pictures_for_the_recipe">Click on the pictures for the recipe</string>
-    <string name="gender">Gender</string>
+    <string name="click_on_the_pictures_for_the_recipe">Koppints a képre a receptért!</string>
+    <string name="basic_calculation_results_and_macro_nutrient_requirement">Számítási eredmények és makronutriens arányok</string>
+    <string name="click_on">Válassz az alábbi lehetőségek közül!</string>
+    <string name="kcal">Kcal</string>
+    <string name="feherje">Fehérje</string>
+    <string name="szenhidrat">Szénhidrát</string>
+    <string name="zsir">Zsír</string>
+
+
+    <string name="kesz_kaja">100 g elkészített étel kalória- és makrotápanyagtartalma</string>
+    <string name="hozzavalok">Hozzávalók egy adaghoz</string>
+    <string name="elkeszites">Elkészítés</string>
+
 
     <string-array name="activity_levels">
         <item>Sedentary</item>
@@ -33,4 +44,23 @@
         <item>Heavy exercise</item>
         <item>Athlete</item>
     </string-array>
+    <string name="title_activity_explain">ExplainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+
+    <string name="aktivitas_kivalasztasa">Aktivitási szint kiválasztása</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="aktivitas">Aktivitási szint</string>
+    <string name="magyarazat">Magyarázat</string>
+    <string name="irodai">Ülő vagy irodai munka</string>
+    <string name="konnyu">Könnyű fizikai munka</string>
+    <string name="mersekelt">Mérsékelt fizikai munka</string>
+    <string name="nehez">Nehéz fizikai munka</string>
+    <string name="verseny">Verseny szintű sportolás</string>
+
+
 </resources>
