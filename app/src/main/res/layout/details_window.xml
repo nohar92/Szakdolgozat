@@ -4,15 +4,31 @@
     android:layout_width="wrap_content"
     android:layout_height="fill_parent">
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#008080"
+        android:fontFamily="sans-serif-black"
+        android:text="Felhasználói adatok megadása"
+        android:textAlignment="center"
+        android:textColor="#008080"
+        android:textSize="23sp" />
 
     <ScrollView
+        android:id="@+id/scroll"
         android:layout_width="wrap_content"
-        android:layout_height="550dp">
+        android:layout_height="550dp"
+        android:layout_marginTop="100dp">
 
         <LinearLayout
             android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <EditText
                 android:id="@+id/u_name"
@@ -94,6 +110,155 @@
                 android:hint="@string/activity_level"
                 android:inputType="number"
                 android:textSize="20sp" />
+
+            <TableLayout
+                android:layout_width="380dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:stretchColumns="0,1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/aktivitas"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/magyarazat"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:id="@+id/levelOne"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:text="@string/one"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/explainOne"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:text="@string/irodai"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:id="@+id/levelTwo"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:text="@string/two"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/explainTwo"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:text="@string/konnyu"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:id="@+id/levelThree"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:text="@string/three"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/explainThree"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:text="@string/mersekelt"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:id="@+id/levelFour"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:text="@string/four"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/explainFour"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:text="@string/nehez"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:id="@+id/levelFive"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:text="@string/five"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/explainFive"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:text="@string/verseny"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
         </LinearLayout>
 
     </ScrollView>
@@ -107,7 +272,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="620dp"
+        android:layout_marginTop="640dp"
         android:layout_marginEnd="140dp"
         android:backgroundTint="#008080"
         android:fontFamily="sans-serif-black"
