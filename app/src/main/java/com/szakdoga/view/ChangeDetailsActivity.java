@@ -1,14 +1,14 @@
 package com.szakdoga.view;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -24,7 +24,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ChangeDetailsActivity extends FunctionsActivity{
-            //implements AdapterView.OnItemSelectedListener {
+
 
     EditText txtId, txtName, txtGender, txtAge,txtWeight,txtHeight,txtNeck,txtWaist,txtHip,txtActivityLv;
     Button back,saveAndBack;
@@ -35,7 +35,6 @@ public class ChangeDetailsActivity extends FunctionsActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.change_details_window);
 
-        txtId = findViewById(R.id.Id_ch);
         txtName = findViewById(R.id.u_name_ch);
         txtGender = findViewById(R.id.gender_ch);
         txtAge = findViewById(R.id.age_ch);
@@ -63,38 +62,61 @@ public class ChangeDetailsActivity extends FunctionsActivity{
         saveAndBack = findViewById(R.id.saveAndBackButton);
         saveAndBack.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                updateData();
-                Intent intent = new Intent(view.getContext(), FunctionsActivity.class);
-                startActivity(intent);
 
+                String name = txtName.getText().toString().trim();
+                String gender = txtGender.getText().toString().trim();
+                String age = txtAge.getText().toString().trim();
+                String weight = txtWeight.getText().toString().trim();
+                String height = txtHeight.getText().toString().trim();
+                String neck = txtNeck.getText().toString().trim();
+                String waist = txtWaist.getText().toString().trim();
+                String hip = txtHip.getText().toString().trim();
+                String activityLv = txtActivityLv.getText().toString().trim();
+
+                if (TextUtils.isEmpty(name)) {
+                    alertDialog();
+                } else if (TextUtils.isEmpty(gender)) {
+                    alertDialog();
+                } else if (TextUtils.isEmpty(age)) {
+                    alertDialog();
+                } else if (TextUtils.isEmpty(weight)) {
+                    alertDialog();
+                } else if (TextUtils.isEmpty(height)) {
+                    alertDialog();
+                } else if (TextUtils.isEmpty(neck)) {
+                    alertDialog();
+                } else if (TextUtils.isEmpty(waist)) {
+                    alertDialog();
+                } else if (TextUtils.isEmpty(hip)) {
+                    alertDialog();
+                } else if (TextUtils.isEmpty(activityLv)) {
+                    alertDialog();
+                } else {
+
+                    updateData();
+                    Intent intent = new Intent(view.getContext(), FunctionsActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
-        /*
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        // Specify the layout to use when the list of choices appears
-        // Apply the adapter to the spinner
-
-        Spinner spinner = (Spinner) findViewById(R.id.activitySpinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-                this, R.array.activity_levels, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        //   spinner.setOnItemSelectedListener(this);
-        */
-    }
-        /*
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        // An item was selected. You can retrieve the selected item using
-        // parent.getItemAtPosition(pos)
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
 
     }
-    */
+
+    private void alertDialog() {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setMessage("Töltse ki az üresen hagyott mezőt/mezőket!");
+        dialog.setTitle("Hiányzó adatok");
+        dialog.setPositiveButton("OK",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+
+        AlertDialog alertDialog = dialog.create();
+        alertDialog.show();
+    }
 
      public void updateData(){
 
