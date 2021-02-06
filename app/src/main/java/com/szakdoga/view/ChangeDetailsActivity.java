@@ -23,11 +23,11 @@ import com.szakdoga.R;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ChangeDetailsActivity extends FunctionsActivity{
+public class ChangeDetailsActivity extends FunctionsActivity {
 
 
-    EditText txtId, txtName, txtGender, txtAge,txtWeight,txtHeight,txtNeck,txtWaist,txtHip,txtActivityLv;
-    Button back,saveAndBack;
+    EditText txtId, txtName, txtGender, txtAge, txtWeight, txtHeight, txtNeck, txtWaist, txtHip, txtActivityLv;
+    Button back, saveAndBack;
 
 
     @Override
@@ -46,11 +46,10 @@ public class ChangeDetailsActivity extends FunctionsActivity{
         txtActivityLv = findViewById(R.id.activity_level_ch);
 
 
-
         // Create back button and its clickListener to step back to FunctionsActivity
         back = findViewById(R.id.backButton);
-        back.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
+        back.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
 
                 Intent intent = new Intent(view.getContext(), FunctionsActivity.class);
                 startActivity(intent);
@@ -60,8 +59,8 @@ public class ChangeDetailsActivity extends FunctionsActivity{
 
         // Create saveAndBack button and its clickListener to save datas and step back to FunctionsActivity
         saveAndBack = findViewById(R.id.saveAndBackButton);
-        saveAndBack.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
+        saveAndBack.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
 
                 String name = txtName.getText().toString().trim();
                 String gender = txtGender.getText().toString().trim();
@@ -118,10 +117,10 @@ public class ChangeDetailsActivity extends FunctionsActivity{
         alertDialog.show();
     }
 
-     public void updateData(){
+    public void updateData() {
 
-         String id = txtId.getText().toString();
-         String name = txtName.getText().toString();
+        String id = "1";
+        String name = txtName.getText().toString();
         String gender = txtGender.getText().toString();
         String age = txtAge.getText().toString();
         String weight = txtWeight.getText().toString();
@@ -140,10 +139,10 @@ public class ChangeDetailsActivity extends FunctionsActivity{
                     @Override
                     public void onResponse(String response) {
                         if (response.equalsIgnoreCase("Data Updated")) {
-                                Toast.makeText(ChangeDetailsActivity.this, "Data Updated", Toast.LENGTH_LONG).show();
-                            } else {
-                                Toast.makeText(ChangeDetailsActivity.this, response, Toast.LENGTH_LONG).show();
-                            }
+                            Toast.makeText(ChangeDetailsActivity.this, "Adatok frissítve", Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(ChangeDetailsActivity.this, response, Toast.LENGTH_LONG).show();
+                        }
 
                     }
                 }, new Response.ErrorListener() {
@@ -152,13 +151,13 @@ public class ChangeDetailsActivity extends FunctionsActivity{
                 Toast.makeText(ChangeDetailsActivity.this, error.getMessage(), Toast.LENGTH_LONG).show();
 
             }
-        }){
+        }) {
 
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
 
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("id",id);
+                params.put("id", id);
                 params.put("username", name);
                 params.put("gender", gender);
                 params.put("age", age);
@@ -167,14 +166,13 @@ public class ChangeDetailsActivity extends FunctionsActivity{
                 params.put("neck", neck);
                 params.put("waist", waist);
                 params.put("hip", hip);
-                params.put("activity_level",activityLv);
+                params.put("activity_level", activityLv);
 
                 return params;
             }
         };
 
-        RequestQueue requestQueue = Volley.newRequestQueue(ChangeDetailsActivity.this);
-        requestQueue.add(request);
+        MySingleton.getInstance(this).addToRequestQueue(request);
     }
 
 
