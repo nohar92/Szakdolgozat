@@ -20,12 +20,12 @@
 
     <ScrollView
         android:id="@+id/scroll"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="550dp"
         android:layout_marginTop="100dp">
 
         <LinearLayout
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -112,9 +112,11 @@
                 android:textSize="20sp" />
 
             <TableLayout
-                android:layout_width="380dp"
+                android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:layout_marginTop="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:gravity="center"
                 android:stretchColumns="0,1">
 
