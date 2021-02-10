@@ -4,6 +4,18 @@
     android:layout_height="match_parent"
     >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/basic_calculation_results_and_macro_nutrient_requirement"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#008080"
+        android:textSize="22sp" />
+
     <TableLayout
         android:layout_width="380dp"
         android:layout_height="100dp"
@@ -50,7 +62,7 @@
             android:minHeight="30dp">
 
             <TextView
-                android:id="@+id/bmi_ertek"
+                android:id="@+id/bmi_value"
                 android:layout_column="0"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -58,7 +70,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/testzsir_ertek"
+                android:id="@+id/bodyFat_value"
                 android:layout_column="1"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -66,7 +78,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/bmr_ertek"
+                android:id="@+id/bmr_value"
                 android:layout_column="2"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -113,7 +125,7 @@
             <TextView
                 android:layout_column="1"
                 android:layout_gravity="center"
-                android:text="TDEE"
+                android:text="Kcal"
                 android:textColor="@color/black"
                 android:fontFamily="sans-serif-black"
                 android:textSize="16sp"
@@ -162,7 +174,7 @@
                 android:textAlignment="center"/>
 
             <TextView
-                android:id="@+id/tomeg_tdee"
+                android:id="@+id/bulk_tdee"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_gravity="center"
@@ -172,16 +184,17 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tomeg_feherje"
+                android:id="@+id/bulk_protein"
+                android:layout_height="wrap_content"
                 android:layout_column="2"
                 android:layout_gravity="center"
                 android:text="TEST"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tomeg_szenhid"
+                android:id="@+id/bulk_carb"
                 android:layout_column="3"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -190,7 +203,7 @@
                 android:textAlignment="center"/>
 
             <TextView
-                android:id="@+id/tomeg_zsir"
+                android:id="@+id/bulk_fat"
                 android:layout_column="4"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -204,55 +217,6 @@
             android:layout_marginBottom="5dp">
 
             <TextView
-                android:id="@+id/cutting"
-                android:layout_column="0"
-                android:layout_gravity="center"
-                android:text="Cutting"
-                android:textAlignment="center"
-                android:textColor="#008080"
-                android:fontFamily="sans-serif-black"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/zsirv_tdee"
-                android:layout_column="1"
-                android:layout_gravity="center"
-                android:text="TEST"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:id="@+id/zsirv_feherje"
-                android:layout_column="2"
-                android:layout_gravity="center"
-                android:text="TEST"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:id="@+id/zsirv_szenhid"
-                android:layout_column="3"
-                android:layout_gravity="center"
-                android:text="TEST"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:id="@+id/zsirv_zsir"
-                android:layout_column="4"
-                android:layout_gravity="center"
-                android:text="TEST"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textAlignment="center"/>
-        </TableRow>
-
-        <TableRow android:background="@drawable/border">
-
-            <TextView
                 android:id="@+id/keep"
                 android:layout_column="0"
                 android:layout_gravity="center"
@@ -263,7 +227,7 @@
                 android:textAlignment="center"/>
 
             <TextView
-                android:id="@+id/szint_tdee"
+                android:id="@+id/maintan_tdee"
                 android:layout_column="1"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -272,7 +236,7 @@
                 android:textAlignment="center"/>
 
             <TextView
-                android:id="@+id/szint_feherje"
+                android:id="@+id/maintan_protein"
                 android:layout_column="2"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -281,7 +245,7 @@
                 android:textAlignment="center"/>
 
             <TextView
-                android:id="@+id/szint_szenhid"
+                android:id="@+id/maintan_carb"
                 android:layout_column="3"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -290,7 +254,7 @@
                 android:textAlignment="center"/>
 
             <TextView
-                android:id="@+id/szint_zsir"
+                android:id="@+id/maintan_fat"
                 android:layout_column="4"
                 android:layout_gravity="center"
                 android:text="TEST"
@@ -299,20 +263,59 @@
                 android:textAlignment="center"/>
         </TableRow>
 
+        <TableRow
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/cutting"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:text="Cutting"
+                android:textAlignment="center"
+                android:textColor="#008080"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cut_tdee"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:text="TEST"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/cut_protein"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:text="TEST"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/cut_carb"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:text="TEST"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/cut_fat"
+                android:layout_column="4"
+                android:layout_gravity="center"
+                android:text="TEST"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+        </TableRow>
 
     </TableLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:text="@string/basic_calculation_results_and_macro_nutrient_requirement"
-        android:textAlignment="center"
-        android:fontFamily="sans-serif-black"
-        android:textColor="#008080"
-        android:textSize="22sp" />
+
 
     <Button
         android:id="@+id/back_to_functions"
