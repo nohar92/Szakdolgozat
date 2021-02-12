@@ -68,8 +68,10 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/first_breakfast"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
+                        android:layout_gravity="center"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
@@ -121,9 +123,11 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/firs_lunch"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
+                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -171,9 +175,11 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/first_dinner"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
+                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -243,9 +249,11 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/second_breakfast"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
+                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -296,9 +304,11 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/second_lunch"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
+                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -346,9 +356,11 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/second_dinner"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
+                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -418,9 +430,11 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/third_breakfast"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
+                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -471,9 +485,11 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/third_lunch"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
+                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -521,9 +537,11 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/third_dinner"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
+                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
