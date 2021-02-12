@@ -1,27 +1,15 @@
 package com.szakdoga.view;
 
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.szakdoga.R;
 import com.szakdoga.model.CalculationModel;
 import com.szakdoga.model.User;
-
-import org.json.JSONException;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import com.szakdoga.UserService;
 
 public class CalculationsActivity extends FunctionsActivity {
 
@@ -29,18 +17,14 @@ public class CalculationsActivity extends FunctionsActivity {
     private TextView bulkPro, cutPro, mainPro, bulkCarb, cutCarb, mainCarb, bulkFat, cutFat, mainFat;
 
     User user = new User();
+    private final UserService userService = new UserService();
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculations_window);
-        getJSON();
 
-        try {
-            Thread.sleep(750);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
+        user = userService.getUser();
         //System.out.println(user.getGender());
         CalculationModel calcMod = new CalculationModel(user);
 
@@ -104,7 +88,7 @@ public class CalculationsActivity extends FunctionsActivity {
         TextView bulking = findViewById(R.id.bulking);
         bulking.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), MenuOfferActivity.class);
+                Intent intent = new Intent(view.getContext(), BulkingMenuOfferActivity.class);
                 startActivity(intent);
             }
         });
@@ -113,7 +97,7 @@ public class CalculationsActivity extends FunctionsActivity {
         TextView cutting = findViewById(R.id.cutting);
         cutting.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), MenuOfferActivity.class);
+                Intent intent = new Intent(view.getContext(), BulkingMenuOfferActivity.class);
                 startActivity(intent);
             }
         });
@@ -122,78 +106,17 @@ public class CalculationsActivity extends FunctionsActivity {
         TextView keep = findViewById(R.id.keep);
         keep.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), MenuOfferActivity.class);
+                Intent intent = new Intent(view.getContext(), BulkingMenuOfferActivity.class);
                 startActivity(intent);
             }
         });
     }
 
-    private void getJSON() {
 
-        class GetJSON extends AsyncTask<Void, Void, Void> {
-
-/*
-            @Override
-            protected void onPreExecute(String s) {
-                super.onPreExecute(s);
-                try {
-                    loadData(s);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-
-
-            @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute(s);
-                //   Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
-
-            }
-*/
-
-            @Override
-            protected Void doInBackground(Void... voids) {
-                try {
-                    URL url = new URL("https://uncloudy-refurbishm.000webhostapp.com/getUserDetails.php");
-                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                    StringBuilder sb = new StringBuilder();
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
-                    String json;
-                    while ((json = bufferedReader.readLine()) != null) {
-                        sb.append(json).append("\n");
-                    }
-                    System.out.println(sb.toString().trim());
-                    loadData(sb.toString().trim());
-                    //return sb.toString().trim();
-                } catch (Exception e) {
-                    //   return null;
-                }
-
-                return null;
-            }
-        }
-        GetJSON getJSON = new GetJSON();
-        getJSON.execute();
-    }
-
-
-
-    private void loadData(String json) throws JSONException{
-
-        ObjectMapper objectMapper = new JsonMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
-        try {
-            user = objectMapper.readValue(json, User.class);
-
-            //System.out.println("Adatok:" + user.getName() + user.getGender() + user.getHeight() + "\n" + user.getWeight());
-        } catch (JsonProcessingException e) {
-            Toast.makeText(getApplicationContext(), "JsonProcessingException: Can not process json string!", Toast.LENGTH_LONG).show();
-        }
     }
 
 
 
 
-}
+
 
