@@ -34,6 +34,13 @@ public class MenuOfferActivity extends FunctionsActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_offer_window);
+        getJSON();
+
+        /*try {
+            Thread.sleep(750);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
 
         // calling the action bar
         ActionBar actionBar = getSupportActionBar();
@@ -43,8 +50,8 @@ public class MenuOfferActivity extends FunctionsActivity{
 
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView first = findViewById(R.id.first_meal_1);
-        first.setOnClickListener(new View.OnClickListener() {
+        CircleImageView breakfast1 = findViewById(R.id.breakfast_1);
+        breakfast1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
@@ -53,8 +60,8 @@ public class MenuOfferActivity extends FunctionsActivity{
         });
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView second = findViewById(R.id.second_meal_1);
-        second.setOnClickListener(new View.OnClickListener() {
+        CircleImageView lunch1 = findViewById(R.id.lunch_1);
+        lunch1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
@@ -63,8 +70,8 @@ public class MenuOfferActivity extends FunctionsActivity{
         });
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView third = findViewById(R.id.third_meal_1);
-        third.setOnClickListener(new View.OnClickListener() {
+        CircleImageView dinner1 = findViewById(R.id.dinner_1);
+        dinner1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
@@ -73,8 +80,8 @@ public class MenuOfferActivity extends FunctionsActivity{
         });
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView first2 = findViewById(R.id.first_meal_2);
-        first2.setOnClickListener(new View.OnClickListener() {
+        CircleImageView breakfast2 = findViewById(R.id.breakfast_2);
+        breakfast2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
@@ -83,8 +90,8 @@ public class MenuOfferActivity extends FunctionsActivity{
         });
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView second2 = findViewById(R.id.second_meal_2);
-        second2.setOnClickListener(new View.OnClickListener() {
+        CircleImageView lunch2 = findViewById(R.id.lunch_2);
+        lunch2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
@@ -93,8 +100,8 @@ public class MenuOfferActivity extends FunctionsActivity{
         });
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView third2 = findViewById(R.id.third_meal_2);
-        third2.setOnClickListener(new View.OnClickListener() {
+        CircleImageView dinner2 = findViewById(R.id.dinner_2);
+        dinner2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
@@ -103,8 +110,8 @@ public class MenuOfferActivity extends FunctionsActivity{
         });
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView first3 = findViewById(R.id.first_meal_3);
-        first3.setOnClickListener(new View.OnClickListener() {
+        CircleImageView breakfast3 = findViewById(R.id.breakfast_3);
+        breakfast3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
@@ -113,8 +120,8 @@ public class MenuOfferActivity extends FunctionsActivity{
         });
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView second3 = findViewById(R.id.second_meal_3);
-        second3.setOnClickListener(new View.OnClickListener() {
+        CircleImageView lunch3 = findViewById(R.id.lunch_3);
+        lunch3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
@@ -123,14 +130,17 @@ public class MenuOfferActivity extends FunctionsActivity{
         });
 
         // Create button and its clickListener to step forward RecipeActivity
-        CircleImageView third3 = findViewById(R.id.third_meal_3);
-        third3.setOnClickListener(new View.OnClickListener() {
+        CircleImageView dinner3 = findViewById(R.id.dinner_3);
+        dinner3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
                 startActivity(intent);
 
             }
         });
+    }
+
+    private void getJSON() {
     }
 
 
