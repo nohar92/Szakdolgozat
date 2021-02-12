@@ -8,10 +8,11 @@ public class FoodMacro {
 
     private int id;
     private String foodName;
-    private int calorie;
+    private int kCal = 326;
     private double protein;
     private double carbohydrate;
     private double fat;
+    private String image;
 
     public int getId() {
         return id;
@@ -29,12 +30,12 @@ public class FoodMacro {
         this.foodName = foodName;
     }
 
-    public int getCalorie() {
-        return calorie;
+    public int getKcal() {
+        return kCal;
     }
 
-    public void setCalorie(int calorie) {
-        this.calorie = calorie;
+    public void setKcal(int kCal) {
+        this.kCal = kCal;
     }
 
     public double getProtein() {
@@ -60,6 +61,17 @@ public class FoodMacro {
     public void setFat(double fat) {
         this.fat = fat;
     }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+
+
 
 
 }
