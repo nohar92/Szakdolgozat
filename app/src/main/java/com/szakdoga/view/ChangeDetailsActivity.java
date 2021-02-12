@@ -57,7 +57,7 @@ public class ChangeDetailsActivity extends FunctionsActivity {
             }
         });
 
-        // Create saveAndBack button and its clickListener to save datas and step back to FunctionsActivity
+        // Create saveAndBack button and its clickListener to save data and step back to FunctionsActivity
         saveAndBack = findViewById(R.id.saveAndBackButton);
         saveAndBack.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -171,9 +171,64 @@ public class ChangeDetailsActivity extends FunctionsActivity {
                 return params;
             }
         };
+       /* RequestQueue queue = MySingleton.getInstance(this.getApplicationContext()).
+                getRequestQueue();*/
 
         MySingleton.getInstance(this).addToRequestQueue(request);
     }
 
+  /*  public  void readData() {
 
+        String  name;
+        String gender = txtGender.getText().toString();
+        String age = txtAge.getText().toString();
+        String weight = txtWeight.getText().toString();
+        String height = txtHeight.getText().toString();
+        String neck = txtNeck.getText().toString();
+        String waist = txtWaist.getText().toString();
+        String hip = txtHip.getText().toString();
+        String activityLv = txtActivityLv.getText().toString();
+
+        StringRequest request = new StringRequest("https://uncloudy-refurbishm.000webhostapp.com/read.php",
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+
+                        *if (response.equalsIgnoreCase("Data Readed")) {
+                            Toast.makeText(ChangeDetailsActivity.this, "Data Readed", Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(ChangeDetailsActivity.this, response, Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(ChangeDetailsActivity.this, error.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        }
+        ) {
+            @Override
+            protected Map<String, String> getParams() {
+
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("username", name);
+                params.put("gender", gender);
+                params.put("age", age);
+                params.put("weight", weight);
+                params.put("height", height);
+                params.put("neck", neck);
+                params.put("waist", waist);
+                params.put("hip", hip);
+                params.put("activity_level", activityLv);
+
+                return params;
+            }
+        };
+
+
+        MySingleton.getInstance(this).addToRequestQueue(request);
+
+    }*/
 }
