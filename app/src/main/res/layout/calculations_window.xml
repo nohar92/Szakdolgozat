@@ -161,17 +161,17 @@
 
         <TableRow
             android:background="@drawable/border"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="5dp"
+            android:minHeight="30dp">
 
             <TextView
                 android:id="@+id/bulking"
                 android:layout_column="0"
-                android:layout_gravity="center"
-                android:text="Bulking"
-                android:textColor="#008080"
-                android:textSize="18sp"
                 android:fontFamily="sans-serif-black"
-                android:textAlignment="center"/>
+                android:text="Bulking"
+                android:textAlignment="center"
+                android:textColor="#008080"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/bulk_tdee"
@@ -214,17 +214,18 @@
 
         <TableRow
             android:background="@drawable/border"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="5dp"
+            android:minHeight="30dp">
 
             <TextView
                 android:id="@+id/keep"
+                android:layout_height="25dp"
                 android:layout_column="0"
-                android:layout_gravity="center"
-                android:text="Maintan"
-                android:textColor="#008080"
-                android:textSize="18sp"
                 android:fontFamily="sans-serif-black"
-                android:textAlignment="center"/>
+                android:text="Maintan"
+                android:textAlignment="center"
+                android:textColor="#008080"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/maintan_tdee"
@@ -264,12 +265,12 @@
         </TableRow>
 
         <TableRow
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:minHeight="30dp">
 
             <TextView
                 android:id="@+id/cutting"
                 android:layout_column="0"
-                android:layout_gravity="center"
                 android:text="Cutting"
                 android:textAlignment="center"
                 android:textColor="#008080"
