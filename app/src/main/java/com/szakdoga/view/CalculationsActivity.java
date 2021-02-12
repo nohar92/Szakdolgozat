@@ -168,7 +168,7 @@ public class CalculationsActivity extends FunctionsActivity {
                     loadData(sb.toString().trim());
                     //return sb.toString().trim();
                 } catch (Exception e) {
-                 //   return null;
+                    //   return null;
                 }
 
                 return null;
