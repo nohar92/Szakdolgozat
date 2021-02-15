@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="@string/weight"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:textSize="20sp" />
 
             <EditText
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="@string/neck"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:textSize="20sp" />
 
             <EditText
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="@string/waist"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:textSize="20sp" />
 
             <EditText
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="@string/hip"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:textSize="20sp" />
 
             <EditText
