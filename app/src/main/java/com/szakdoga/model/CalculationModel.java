@@ -58,11 +58,11 @@ public class CalculationModel {
     }
 
     public double getBulkPro() {
-        return (bulking() * 0.3 / 4);
+        return (bulking() * 0.25 / 4);
     }
 
     public double getBulkCarb() {
-        return (bulking() * 0.5 / 4);
+        return (bulking() * 0.55 / 4);
     }
 
     public double getBulkFat() {
@@ -74,15 +74,15 @@ public class CalculationModel {
     }
 
     public double getMainPro() {
-        return (maintenance() * 0.3 / 4);
+        return (maintenance() * 0.2 / 4);
     }
 
     public double getMainCarb() {
-        return (maintenance() * 0.35 / 4);
+        return (maintenance() * 0.5 / 4);
     }
 
     public double getMainFat() {
-        return (maintenance() * 0.35 / 9);
+        return (maintenance() * 0.3 / 9);
     }
 
     public double cutting() {
@@ -90,15 +90,15 @@ public class CalculationModel {
     }
 
     public double getCutPro() {
-        return (cutting() * 0.4 / 4);
+        return (cutting() * 0.3 / 4);
     }
 
     public double getCutCarb() {
-        return (cutting() * 0.2 / 4);
+        return (cutting() * 0.45 / 4);
     }
 
     public double getCutFat() {
-        return (cutting() * 0.4 / 9);
+        return (cutting() * 0.25 / 9);
     }
 
 
