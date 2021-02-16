@@ -7,16 +7,24 @@ public class FoodMacro {
     }
 
     private int id;
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    private String category;
     private String foodName;
-    private int kCal = 326;
+    private int kCal = 243;
     private double protein;
     private double carbohydrate;
     private double fat;
     private String image;
 
-    public int getId() {
-        return id;
-    }
+    public int getId() {return id; }
 
     public void setId(int id) {
         this.id = id;
