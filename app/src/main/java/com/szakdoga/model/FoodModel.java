@@ -8,10 +8,7 @@ public class FoodModel {
     public FoodModel(FoodMacro foodMacro,CalculationModel calcModel){
         this.foodMacro = foodMacro;
         this.calcModel = calcModel;
-
     }
-
-
 
     public int getBulkingBreakfastAmount(){
         double maxCalorie =  calcModel.bulking() * 0.30;

@@ -30,9 +30,7 @@ public class UserService {
         }
     }
 
-    public User getUser() {
-        return user;
-    }
+    public User getUser() { return user; }
 
 
     public void getDetails() throws ExecutionException, InterruptedException {
@@ -50,7 +48,6 @@ public class UserService {
                     while ((json = bufferedReader.readLine()) != null) {
                         sb.append(json).append("\n");
                     }
-                //    System.out.println(sb.toString().trim());
                     loadData(sb.toString().trim());
                 } catch (Exception e) {
 

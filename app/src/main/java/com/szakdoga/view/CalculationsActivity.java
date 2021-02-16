@@ -6,71 +6,66 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.szakdoga.FoodMacroService;
 import com.szakdoga.R;
 import com.szakdoga.model.CalculationModel;
+import com.szakdoga.model.FoodMacro;
 import com.szakdoga.model.User;
 import com.szakdoga.UserService;
 
 public class CalculationsActivity extends FunctionsActivity {
 
-    private TextView bmi, bodyFat, bmr, bulkTdee, cutTdee, maintanTdee;
-    private TextView bulkPro, cutPro, mainPro, bulkCarb, cutCarb, mainCarb, bulkFat, cutFat, mainFat;
-
-    User user = new User();
     private final UserService userService = new UserService();
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculations_window);
 
+        CalculationModel calcMod = new CalculationModel(userService.getUser());
 
-        user = userService.getUser();
-        //System.out.println(user.getGender());
-        CalculationModel calcMod = new CalculationModel(user);
-
-        bmi = findViewById(R.id.bmi_value);
+        TextView bmi = findViewById(R.id.bmi_value);
         bmi.setText(String.valueOf(CalculationModel.round(calcMod.bmi(), 2)));
 
-        bodyFat = findViewById(R.id.bodyFat_value);
+        TextView bodyFat = findViewById(R.id.bodyFat_value);
         bodyFat.setText(String.valueOf(CalculationModel.round(calcMod.bodyFat(), 2)));
 
-        bmr = findViewById(R.id.bmr_value);
+        TextView bmr = findViewById(R.id.bmr_value);
         bmr.setText(String.valueOf((int) calcMod.bmr()));
 
-        bulkTdee = findViewById(R.id.bulk_tdee);
+        TextView bulkTdee = findViewById(R.id.bulk_tdee);
         bulkTdee.setText(String.valueOf((int) CalculationModel.round(calcMod.bulking(), 2)));
 
-        cutTdee = findViewById(R.id.cut_tdee);
+        TextView cutTdee = findViewById(R.id.cut_tdee);
         cutTdee.setText(String.valueOf((int) CalculationModel.round(calcMod.cutting(), 2)));
 
-        maintanTdee = findViewById(R.id.maintan_tdee);
+        TextView maintanTdee = findViewById(R.id.maintan_tdee);
         maintanTdee.setText(String.valueOf((int) CalculationModel.round(calcMod.maintenance(), 2)));
 
-        bulkPro = findViewById(R.id.bulk_protein);
+        TextView bulkPro = findViewById(R.id.bulk_protein);
         bulkPro.setText(String.valueOf(CalculationModel.round(calcMod.getBulkPro(),2)));
 
-        bulkCarb = findViewById(R.id.bulk_carb);
+        TextView bulkCarb = findViewById(R.id.bulk_carb);
         bulkCarb.setText(String.valueOf(CalculationModel.round(calcMod.getBulkCarb(),2)));
 
-        bulkFat = findViewById(R.id.bulk_fat);
+        TextView bulkFat = findViewById(R.id.bulk_fat);
         bulkFat.setText(String.valueOf(CalculationModel.round(calcMod.getBulkFat(),2)));
 
-        cutPro = findViewById(R.id.cut_protein);
+        TextView cutPro = findViewById(R.id.cut_protein);
         cutPro.setText(String.valueOf(CalculationModel.round(calcMod.getCutPro(),2)));
 
-        cutCarb = findViewById(R.id.cut_carb);
+        TextView cutCarb = findViewById(R.id.cut_carb);
         cutCarb.setText(String.valueOf(CalculationModel.round(calcMod.getCutCarb(),2)));
 
-        cutFat = findViewById(R.id.cut_fat);
+        TextView cutFat = findViewById(R.id.cut_fat);
         cutFat.setText(String.valueOf(CalculationModel.round(calcMod.getCutFat(),2)));
 
-        mainPro = findViewById(R.id.maintan_protein);
+        TextView mainPro = findViewById(R.id.maintan_protein);
         mainPro.setText(String.valueOf(CalculationModel.round(calcMod.getMainPro(),2)));
 
-        mainCarb = findViewById(R.id.maintan_carb);
+        TextView mainCarb = findViewById(R.id.maintan_carb);
         mainCarb.setText(String.valueOf(CalculationModel.round(calcMod.getMainCarb(),2)));
 
-        mainFat = findViewById(R.id.maintan_fat);
+        TextView mainFat = findViewById(R.id.maintan_fat);
         mainFat.setText(String.valueOf(CalculationModel.round(calcMod.getMainFat(),2)));
 
 
@@ -97,7 +92,7 @@ public class CalculationsActivity extends FunctionsActivity {
         TextView cutting = findViewById(R.id.cutting);
         cutting.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), BulkingMenuOfferActivity.class);
+                Intent intent = new Intent(view.getContext(), CuttingMenuOfferActivity.class);
                 startActivity(intent);
             }
         });

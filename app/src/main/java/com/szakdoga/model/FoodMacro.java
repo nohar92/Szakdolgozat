@@ -7,15 +7,6 @@ public class FoodMacro {
     }
 
     private int id;
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
     private String category;
     private String foodName;
     private int kCal = 243;
@@ -24,11 +15,15 @@ public class FoodMacro {
     private double fat;
     private String image;
 
-    public int getId() {return id; }
+    public int getId() { return id; }
 
     public void setId(int id) {
         this.id = id;
     }
+
+    public String getCategory() { return category; }
+
+    public void setCategory(String category) {this.category = category; }
 
     public String getFoodName() {
         return foodName;
@@ -77,9 +72,6 @@ public class FoodMacro {
     public void setImage(String image) {
         this.image = image;
     }
-
-
-
 
 
 }
