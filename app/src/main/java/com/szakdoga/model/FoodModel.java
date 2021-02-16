@@ -14,7 +14,7 @@ public class FoodModel {
 
 
     public int getBulkingBreakfastAmount(){
-        double maxCalorie =  calcModel.bulking() * 0.35;
+        double maxCalorie =  calcModel.bulking() * 0.30;
         return (int) ((maxCalorie/ foodMacro.getKcal())*100);
     }
 
@@ -24,7 +24,7 @@ public class FoodModel {
     }
 
     public int getBulkingDinnerAmount(){
-        double maxCalorie =  (calcModel.bulking() *0.3);
+        double maxCalorie =  (calcModel.bulking() *0.25);
         return (int) (maxCalorie/ foodMacro.getKcal())*100;
     }
 
@@ -39,7 +39,7 @@ public class FoodModel {
     }
 
     public int getCuttingDinnerAmount(){
-        double maxCalorie =  (calcModel.cutting() *0.3);
+        double maxCalorie =  (calcModel.cutting() *0.2);
         return (int) (maxCalorie/ foodMacro.getKcal())*100;
     }
 
@@ -49,7 +49,7 @@ public class FoodModel {
     }
 
     public int getMaintanLunchAmount(){
-        double maxCalorie =  (calcModel.maintenance() *0.45);
+        double maxCalorie =  (calcModel.maintenance() *0.35);
         return (int) (maxCalorie/ foodMacro.getKcal())*100;
     }
 
