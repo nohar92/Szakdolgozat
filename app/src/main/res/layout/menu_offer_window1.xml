@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tooltip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/click_on_the_pictures_for_the_recipe"
+        android:textAlignment="center"
+        android:textColor="#008080"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tooltip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-black"
+                android:text="Menu 1"
+                android:textAlignment="center"
+                android:textColor="#008080"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:id="@+id/menu_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="*">
+
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Reggeli"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/first_breakfast_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/breakfast_1_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/mosolygos_reggeli" />
+
+                    <TextView
+                        android:id="@+id/breakfast_name_1_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:ellipsize="none"
+                        android:fontFamily="sans-serif-black"
+                        android:maxLines="100"
+                        android:scrollHorizontally="false"
+                        android:text="Mosolygós szemüveg"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Ebéd"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/firs_lunch_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/lunch_1_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/paprikas_mini_pizza_sult_paradicsommal" />
+
+                    <TextView
+
+                        android:id="@+id/lunch_name_1_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text='Paprikás mini "pizza"'
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Vacsora"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/first_dinner_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/dinner_1_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/fokhagymas" />
+
+                    <TextView
+                        android:id="@+id/dinner_name_1_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Grillezett csirkemell"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-black"
+                android:text="Menu 2"
+                android:textAlignment="center"
+                android:textColor="#008080"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:id="@+id/menu_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="*">
+
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Reggeli"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/second_breakfast_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/breakfast_2_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/gyumolcsrizs" />
+
+                    <TextView
+                        android:id="@+id/breakfast_name_2_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:ellipsize="none"
+                        android:fontFamily="sans-serif-black"
+                        android:maxLines="100"
+                        android:scrollHorizontally="false"
+                        android:text="Gyümölcsrizs"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Ebéd"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/second_lunch_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/lunch_2_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/paprikas_mini_pizza_sult_paradicsommal" />
+
+                    <TextView
+
+                        android:id="@+id/lunch_name_2_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Gyümölcsrizs"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Vacsora"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/second_dinner_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/dinner_2_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ceklas_gnocchi" />
+
+                    <TextView
+                        android:id="@+id/dinner_name_2_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Avokádó reggelire"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:fontFamily="sans-serif-black"
+                android:text="Menu 3"
+                android:textAlignment="center"
+                android:textColor="#008080"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:id="@+id/menu_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="*">
+
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Reggeli"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/third_breakfast_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/breakfast_3_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/avokado_reggelire" />
+
+                    <TextView
+                        android:id="@+id/breakfast_name_3_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:ellipsize="none"
+                        android:fontFamily="sans-serif-black"
+                        android:maxLines="100"
+                        android:scrollHorizontally="false"
+                        android:text="Avokádó reggelire"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Ebéd"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/third_lunch_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/lunch_3_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/paprikas_mini_pizza_sult_paradicsommal" />
+
+                    <TextView
+
+                        android:id="@+id/lunch_name_3_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Gyümölcsrizs"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/border"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Vacsora"
+                        android:textAlignment="textStart"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/third_dinner_offer1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Mennyiség: 700 g"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#008080"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/border"
+                    android:minHeight="130dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/dinner_3_offer1"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/ceklas_gnocchi" />
+
+                    <TextView
+                        android:id="@+id/dinner_name_3_offer1"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Avokádó reggelire"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
