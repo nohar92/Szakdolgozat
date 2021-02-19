@@ -101,7 +101,7 @@ public class CalculationsActivity extends FunctionsActivity {
         TextView keep = findViewById(R.id.keep);
         keep.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), BulkingMenuOfferActivity.class);
+                Intent intent = new Intent(view.getContext(), MaintanMenuOfferActivity.class);
                 startActivity(intent);
             }
         });

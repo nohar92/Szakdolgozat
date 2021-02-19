@@ -2,6 +2,7 @@ package com.szakdoga.view;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,14 +18,14 @@ import com.szakdoga.model.CalculationModel;
 import com.szakdoga.model.FoodMacro;
 import com.szakdoga.model.FoodModel;
 
+import java.util.concurrent.ExecutionException;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class BulkingMenuOfferActivity extends FunctionsActivity {
 
     private final UserService userService = new UserService();
     private final FoodMacroService foodMacroService = new FoodMacroService();
-
-    FoodMacro foodMacro = new FoodMacro();
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -40,16 +41,20 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
         return true;
     }
 
+
+
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_offer_window);
 
-        FoodModel foodModel = new FoodModel(foodMacro, new CalculationModel(userService.getUser()));
+        FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
 
         // Create button and its clickListener to step forward RecipeActivity
         CircleImageView breakfast1 = findViewById(R.id.breakfast_1);
+      // breakfast1.setImageURI();
         breakfast1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RecipeActivity.class);
@@ -61,8 +66,8 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
         firstBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmount() + " g");
 
         TextView firstBreakfastName = findViewById(R.id.breakfast_name_1);
-        firstBreakfastName.setText(FoodMacroService.class.getName());
-        System.out.println("miért null" + foodMacro.getFoodName());
+        firstBreakfastName.setText("bugos");
+
 
 
         // Create button and its clickListener to step forward RecipeActivity
@@ -201,6 +206,9 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
+
+
+
 /*
     private void getJSON() throws ExecutionException, InterruptedException {
 

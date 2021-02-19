@@ -9,7 +9,7 @@ public class FoodMacro {
     private int id;
     private String category;
     private String foodName;
-    private int kCal = 243;
+    private int kCal;
     private double protein;
     private double carbohydrate;
     private double fat;
@@ -25,9 +25,7 @@ public class FoodMacro {
 
     public void setCategory(String category) {this.category = category; }
 
-    public String getFoodName() {
-        return foodName;
-    }
+    public String getFoodName() { return foodName; }
 
     public void setFoodName(String foodName) {
         this.foodName = foodName;

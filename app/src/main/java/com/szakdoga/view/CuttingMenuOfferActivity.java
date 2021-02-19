@@ -24,8 +24,6 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
     private final UserService userService = new UserService();
     private final FoodMacroService foodMacroService = new FoodMacroService();
 
-    FoodMacro foodMacro = new FoodMacro();
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
@@ -45,7 +43,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_offer_window);
 
-        FoodModel foodModel = new FoodModel(foodMacro, new CalculationModel(userService.getUser()));
+        FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
 
         // Create button and its clickListener to step forward RecipeActivity
         CircleImageView breakfast1 = findViewById(R.id.breakfast_1);
@@ -60,8 +58,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
         firstBreakfast.setText("Mennyiség: " + " " + foodModel.getCuttingBreakfastAmount() + " g");
 
         TextView firstBreakfastName = findViewById(R.id.breakfast_name_1);
-        firstBreakfastName.setText(FoodMacroService.class.getName());
-        System.out.println("miért null" + foodMacro.getFoodName());
+        firstBreakfastName.setText("kaja");
 
 
         // Create button and its clickListener to step forward RecipeActivity
@@ -190,7 +187,6 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
 
         TextView thirdDinnerName = findViewById(R.id.dinner_name_3);
         thirdDinnerName.setText(FoodMacroService.class.getName());
-
 
         // calling the action bar
         ActionBar actionBar = getSupportActionBar();
