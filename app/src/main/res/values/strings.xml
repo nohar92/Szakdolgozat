@@ -22,7 +22,7 @@
     <string name="choose_from_the_options_below">Válassz az alábbi lehetőségek közül!</string>
     <string name="body_fat">Testzsír %</string>
     <string name="bmi">BMI</string>
-    <string name="bmr">BMR</string>
+    <string name="bmr">BMR(kcal)</string>
     <string name="click_on_the_pictures_for_the_recipe">Koppints a képre a receptért!</string>
     <string name="basic_calculation_results_and_macro_nutrient_requirement">Számítási eredmények és makronutriens arányok</string>
     <string name="click_on">Válassz az alábbi lehetőségek közül!</string>
