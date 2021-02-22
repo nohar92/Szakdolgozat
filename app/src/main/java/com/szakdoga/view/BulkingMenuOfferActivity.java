@@ -16,20 +16,21 @@ import com.szakdoga.UserService;
 import com.szakdoga.model.CalculationModel;
 import com.szakdoga.model.FoodModel;
 
+import java.security.SecureRandom;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class BulkingMenuOfferActivity extends FunctionsActivity {
 
     private final UserService userService = new UserService();
     private final FoodMacroService foodMacroService = new FoodMacroService();
-
+    SecureRandom rand = new SecureRandom();
     /*// For Recyclerview
     private final String JSON_URL = "https://raw.githubusercontent.com/nohar92/Szoftverfejlesztes/master/BreakfastApi.json";
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     private List<FoodMacro> foodList;*/
 
-    public int CASE = 1;
+    public int randCase = rand.nextInt(3);
 
 
     @Override
@@ -51,167 +52,9 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (CASE == 1) {
-            setContentView(R.layout.menu_offer_window1);
+        System.out.println("RANDOM:" + randCase);
 
-            FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView breakfast1 = findViewById(R.id.breakfast_1_offer1);
-            // breakfast1.setImageURI();
-            breakfast1.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-
-            TextView firstBreakfast = findViewById(R.id.first_breakfast_offer1);
-            firstBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmount() + " g");
-
-            TextView firstBreakfastName = findViewById(R.id.breakfast_name_1_offer1);
-            firstBreakfastName.setText("Mosolygós szemüveg");
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView lunch1 = findViewById(R.id.lunch_1_offer1);
-            lunch1.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            TextView firstLunch = findViewById(R.id.firs_lunch_offer1);
-            firstLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmount() + " g");
-
-            TextView firstLunchName = findViewById(R.id.lunch_name_1_offer1);
-            firstLunchName.setText("Paprikás mini 'pizza'");
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView dinner1 = findViewById(R.id.dinner_1_offer1);
-            dinner1.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            TextView firstDinner = findViewById(R.id.first_dinner_offer1);
-            firstDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmount() + " g");
-
-            TextView firstDinnerName = findViewById(R.id.dinner_name_1_offer1);
-            firstDinnerName.setText("Grillezett csirkemell");
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView breakfast2 = findViewById(R.id.breakfast_2_offer1);
-            breakfast2.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            TextView secondBreakfast = findViewById(R.id.second_breakfast_offer1);
-            secondBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmount() + " g");
-
-            TextView secondBreakfastName = findViewById(R.id.breakfast_name_2_offer1);
-            secondBreakfastName.setText("Gyümölcsrizs");
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView lunch2 = findViewById(R.id.lunch_2_offer1);
-            lunch2.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            TextView secondLunch = findViewById(R.id.second_lunch_offer1);
-            secondLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmount() + " g");
-
-            TextView secondLunchName = findViewById(R.id.lunch_name_2_offer1);
-            secondLunchName.setText("FoodMacroService");
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView dinner2 = findViewById(R.id.dinner_2_offer1);
-            dinner2.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            TextView secondDinner = findViewById(R.id.second_dinner_offer1);
-            secondDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmount() + " g");
-
-            TextView secondDinnerName = findViewById(R.id.dinner_name_2_offer1);
-            secondDinnerName.setText("FoodMacroService");
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView breakfast3 = findViewById(R.id.breakfast_3_offer1);
-            breakfast3.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            TextView thirdBreakfast = findViewById(R.id.third_breakfast_offer1);
-            thirdBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmount() + " g");
-
-            TextView thirdBreakfastName = findViewById(R.id.breakfast_name_3_offer1);
-            thirdBreakfastName.setText("FoodMacroService");
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView lunch3 = findViewById(R.id.lunch_3_offer1);
-            lunch3.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            TextView thirdLunch = findViewById(R.id.third_lunch_offer1);
-            thirdLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmount() + " g");
-
-            TextView thirdLunchName = findViewById(R.id.lunch_name_3_offer1);
-            thirdLunchName.setText("FoodMacroService");
-
-
-            // Create button and its clickListener to step forward RecipeActivity
-            CircleImageView dinner3 = findViewById(R.id.dinner_3_offer1);
-            dinner3.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            TextView thirdDinner = findViewById(R.id.third_dinner_offer1);
-            thirdDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmount() + " g");
-
-            TextView thirdDinnerName = findViewById(R.id.dinner_name_3_offer1);
-            thirdDinnerName.setText("FoodMacroService");
-
-
-            // calling the action bar
-            ActionBar actionBar = getSupportActionBar();
-
-            // showing the back button in action bar
-            assert actionBar != null;
-            actionBar.setDisplayHomeAsUpEnabled(true);
-
-        }
-        else {
+        if (randCase == 0) {
 
 
             setContentView(R.layout.menu_offer_window);
@@ -229,10 +72,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
 
 
             TextView firstBreakfast = findViewById(R.id.first_breakfast);
-            firstBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmount() + " g");
+            firstBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountZero1() + " g");
 
             TextView firstBreakfastName = findViewById(R.id.breakfast_name_1);
-            firstBreakfastName.setText("Mosolygós szemüveg");
+            firstBreakfastName.setText("Meggyes zabkása");
 
 
             // Create button and its clickListener to step forward RecipeActivity
@@ -245,10 +88,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             });
 
             TextView firstLunch = findViewById(R.id.firs_lunch);
-            firstLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmount() + " g");
+            firstLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountZero1() + " g");
 
             TextView firstLunchName = findViewById(R.id.lunch_name_1);
-            firstLunchName.setText("FoodMacroService");
+            firstLunchName.setText("Tonhal steak");
 
 
             // Create button and its clickListener to step forward RecipeActivity
@@ -261,10 +104,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             });
 
             TextView firstDinner = findViewById(R.id.first_dinner);
-            firstDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmount() + " g");
+            firstDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountZero1() + " g");
 
             TextView firstDinnerName = findViewById(R.id.dinner_name_1);
-            firstDinnerName.setText("FoodMacroService");
+            firstDinnerName.setText("Gyros tál");
 
 
             // Create button and its clickListener to step forward RecipeActivity
@@ -277,10 +120,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             });
 
             TextView secondBreakfast = findViewById(R.id.second_breakfast);
-            secondBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmount() + " g");
+            secondBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountZero2() + " g");
 
             TextView secondBreakfastName = findViewById(R.id.breakfast_name_2);
-            secondBreakfastName.setText("FoodMacroService");
+            secondBreakfastName.setText("Bubbles and squeak");
 
 
             // Create button and its clickListener to step forward RecipeActivity
@@ -293,10 +136,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             });
 
             TextView secondLunch = findViewById(R.id.second_lunch);
-            secondLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmount() + " g");
+            secondLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountZero2() + " g");
 
             TextView secondLunchName = findViewById(R.id.lunch_name_2);
-            secondLunchName.setText("FoodMacroService");
+            secondLunchName.setText("Zöldséges húsgolyó");
 
 
             // Create button and its clickListener to step forward RecipeActivity
@@ -309,10 +152,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             });
 
             TextView secondDinner = findViewById(R.id.second_dinner);
-            secondDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmount() + " g");
+            secondDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountZero2() + " g");
 
             TextView secondDinnerName = findViewById(R.id.dinner_name_2);
-            secondDinnerName.setText("FoodMacroService");
+            secondDinnerName.setText("Lecs-shuka");
 
 
             // Create button and its clickListener to step forward RecipeActivity
@@ -325,10 +168,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             });
 
             TextView thirdBreakfast = findViewById(R.id.third_breakfast);
-            thirdBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmount() + " g");
+            thirdBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountZero3() + " g");
 
             TextView thirdBreakfastName = findViewById(R.id.breakfast_name_3);
-            thirdBreakfastName.setText("FoodMacroService");
+            thirdBreakfastName.setText("Zöldséges-darált hús");
 
 
             // Create button and its clickListener to step forward RecipeActivity
@@ -341,10 +184,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             });
 
             TextView thirdLunch = findViewById(R.id.third_lunch);
-            thirdLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmount() + " g");
+            thirdLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountZero3() + " g");
 
             TextView thirdLunchName = findViewById(R.id.lunch_name_3);
-            thirdLunchName.setText("FoodMacroService");
+            thirdLunchName.setText("Szilvás gombóc");
 
 
             // Create button and its clickListener to step forward RecipeActivity
@@ -357,10 +200,10 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             });
 
             TextView thirdDinner = findViewById(R.id.third_dinner);
-            thirdDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmount() + " g");
+            thirdDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountZero3() + " g");
 
             TextView thirdDinnerName = findViewById(R.id.dinner_name_3);
-            thirdDinnerName.setText("FoodMacroService");
+            thirdDinnerName.setText("Tejszínes csirkemell");
 
 
             // calling the action bar
@@ -370,7 +213,327 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             assert actionBar != null;
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+        else if (randCase == 1) {
+            setContentView(R.layout.menu_offer_window1);
+
+            FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView breakfast1 = findViewById(R.id.breakfast_1_offer1);
+            // breakfast1.setImageURI();
+            breakfast1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+
+            TextView firstBreakfast = findViewById(R.id.first_breakfast_offer1);
+            firstBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountFirst1() + " g");
+
+            TextView firstBreakfastName = findViewById(R.id.breakfast_name_1_offer1);
+            firstBreakfastName.setText("Mosolygós szemüveg");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView lunch1 = findViewById(R.id.lunch_1_offer1);
+            lunch1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView firstLunch = findViewById(R.id.firs_lunch_offer1);
+            firstLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountFirst1() + " g");
+
+            TextView firstLunchName = findViewById(R.id.lunch_name_1_offer1);
+            firstLunchName.setText("Paprikás mini 'pizza'");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView dinner1 = findViewById(R.id.dinner_1_offer1);
+            dinner1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView firstDinner = findViewById(R.id.first_dinner_offer1);
+            firstDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountFirst1() + " g");
+
+            TextView firstDinnerName = findViewById(R.id.dinner_name_1_offer1);
+            firstDinnerName.setText("Grillezett csirkemell");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView breakfast2 = findViewById(R.id.breakfast_2_offer1);
+            breakfast2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView secondBreakfast = findViewById(R.id.second_breakfast_offer1);
+            secondBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountFirst2() + " g");
+
+            TextView secondBreakfastName = findViewById(R.id.breakfast_name_2_offer1);
+            secondBreakfastName.setText("Gyümölcsrizs");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView lunch2 = findViewById(R.id.lunch_2_offer1);
+            lunch2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView secondLunch = findViewById(R.id.second_lunch_offer1);
+            secondLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountFirst2() + " g");
+
+            TextView secondLunchName = findViewById(R.id.lunch_name_2_offer1);
+            secondLunchName.setText("Libacomb őszi ízekkel");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView dinner2 = findViewById(R.id.dinner_2_offer1);
+            dinner2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView secondDinner = findViewById(R.id.second_dinner_offer1);
+            secondDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountFirst2() + " g");
+
+            TextView secondDinnerName = findViewById(R.id.dinner_name_2_offer1);
+            secondDinnerName.setText("Brassói aprópecsenye");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView breakfast3 = findViewById(R.id.breakfast_3_offer1);
+            breakfast3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView thirdBreakfast = findViewById(R.id.third_breakfast_offer1);
+            thirdBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountFirst3() + " g");
+
+            TextView thirdBreakfastName = findViewById(R.id.breakfast_name_3_offer1);
+            thirdBreakfastName.setText("Tükörtojás avokádóban");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView lunch3 = findViewById(R.id.lunch_3_offer1);
+            lunch3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView thirdLunch = findViewById(R.id.third_lunch_offer1);
+            thirdLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountFirst3() + " g");
+
+            TextView thirdLunchName = findViewById(R.id.lunch_name_3_offer1);
+            thirdLunchName.setText("Sajtos karajszeletek");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView dinner3 = findViewById(R.id.dinner_3_offer1);
+            dinner3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView thirdDinner = findViewById(R.id.third_dinner_offer1);
+            thirdDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountFirst3() + " g");
+
+            TextView thirdDinnerName = findViewById(R.id.dinner_name_3_offer1);
+            thirdDinnerName.setText("Sonkás-mozzarellás saláta");
+
+
+            // calling the action bar
+            ActionBar actionBar = getSupportActionBar();
+
+            // showing the back button in action bar
+            assert actionBar != null;
+            actionBar.setDisplayHomeAsUpEnabled(true);
+
+        }
+        else if (randCase == 2){
+            setContentView(R.layout.menu_offer_window2);
+
+            FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView breakfast1 = findViewById(R.id.breakfast_1_offer2);
+            // breakfast1.setImageURI();
+            breakfast1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+
+            TextView firstBreakfast = findViewById(R.id.first_breakfast_offer2);
+            firstBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountSecond1() + " g");
+
+            TextView firstBreakfastName = findViewById(R.id.breakfast_name_1_offer2);
+            firstBreakfastName.setText("Tojásos omlett");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView lunch1 = findViewById(R.id.lunch_1_offer2);
+            lunch1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView firstLunch = findViewById(R.id.firs_lunch_offer2);
+            firstLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountSecond1() + " g");
+
+            TextView firstLunchName = findViewById(R.id.lunch_name_1_offer2);
+            firstLunchName.setText("Baconös csibefalat");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView dinner1 = findViewById(R.id.dinner_1_offer2);
+            dinner1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView firstDinner = findViewById(R.id.first_dinner_offer2);
+            firstDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountSecond1() + " g");
+
+            TextView firstDinnerName = findViewById(R.id.dinner_name_1_offer2);
+            firstDinnerName.setText("Szilvás pulykamell");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView breakfast2 = findViewById(R.id.breakfast_2_offer2);
+            breakfast2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView secondBreakfast = findViewById(R.id.second_breakfast_offer2);
+            secondBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountSecond2() + " g");
+
+            TextView secondBreakfastName = findViewById(R.id.breakfast_name_2_offer2);
+            secondBreakfastName.setText("Low carb reggeli");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView lunch2 = findViewById(R.id.lunch_2_offer2);
+            lunch2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView secondLunch = findViewById(R.id.second_lunch_offer2);
+            secondLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountSecond2() + " g");
+
+            TextView secondLunchName = findViewById(R.id.lunch_name_2_offer2);
+            secondLunchName.setText("Mexikói chilisbab");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView dinner2 = findViewById(R.id.dinner_2_offer2);
+            dinner2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView secondDinner = findViewById(R.id.second_dinner_offer2);
+            secondDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountSecond2() + " g");
+
+            TextView secondDinnerName = findViewById(R.id.dinner_name_2_offer2);
+            secondDinnerName.setText("Citromos csirkemell");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView breakfast3 = findViewById(R.id.breakfast_3_offer2);
+            breakfast3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView thirdBreakfast = findViewById(R.id.third_breakfast_offer2);
+            thirdBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountSecond3() + " g");
+
+            TextView thirdBreakfastName = findViewById(R.id.breakfast_name_3_offer2);
+            thirdBreakfastName.setText("Amerikai palacsinta");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView lunch3 = findViewById(R.id.lunch_3_offer2);
+            lunch3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView thirdLunch = findViewById(R.id.third_lunch_offer2);
+            thirdLunch.setText("Mennyiség: " + " " + foodModel.getBulkingLunchAmountSecond3() + " g");
+
+            TextView thirdLunchName = findViewById(R.id.lunch_name_3_offer2);
+            thirdLunchName.setText("Parmezános csirke");
+
+
+            // Create button and its clickListener to step forward RecipeActivity
+            CircleImageView dinner3 = findViewById(R.id.dinner_3_offer2);
+            dinner3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            TextView thirdDinner = findViewById(R.id.third_dinner_offer2);
+            thirdDinner.setText("Mennyiség: " + " " + foodModel.getBulkingDinnerAmountSecond3() + " g");
+
+            TextView thirdDinnerName = findViewById(R.id.dinner_name_3_offer2);
+            thirdDinnerName.setText("Céklás gnocchi");
+
+
+            // calling the action bar
+            ActionBar actionBar = getSupportActionBar();
+
+            // showing the back button in action bar
+            assert actionBar != null;
+            actionBar.setDisplayHomeAsUpEnabled(true);
+
+        }
     }
+}
 
 /*    private void jsonrequest() {
 
@@ -410,4 +573,4 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
         recyclerView.setAdapter(myadapter);
     }*/
 
-}
+
