@@ -28,7 +28,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="30dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Gyümölcsrizs"
+                android:text="Zöldséges-darált húsos reggeli"
                 android:textAlignment="center"
                 android:textColor="#008080"
                 android:textSize="26sp" />
@@ -109,7 +109,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-black"
-                        android:text="162"
+                        android:text="88"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
@@ -120,7 +120,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-black"
-                        android:text="2.2"
+                        android:text="9.1"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
@@ -131,7 +131,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-black"
-                        android:text="16.8"
+                        android:text="2.3"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
@@ -142,7 +142,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-black"
-                        android:text="9.6"
+                        android:text="4.5"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
@@ -152,7 +152,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="240dp"
+                android:layout_height="660dp"
                 android:clickable="false"
                 android:orientation="vertical">
 
@@ -194,7 +194,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif-black"
-                android:text="@string/gyumolcsrizs"
+                android:text="@string/daralthusos"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
