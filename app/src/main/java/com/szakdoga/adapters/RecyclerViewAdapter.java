@@ -54,7 +54,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 i.putExtra("image",foodData.get(viewHolder.getAdapterPosition()).getImage());
                 i.putExtra("foodname",foodData.get(viewHolder.getAdapterPosition()).getFoodName());
 
-
                 mContext.startActivity(i);
 
             }
