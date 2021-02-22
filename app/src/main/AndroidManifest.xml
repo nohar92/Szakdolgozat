@@ -40,6 +40,57 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".view.recipes.RecipeActivity2"
             android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity4"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity5"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity6"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity7"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity8"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity9"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity10"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity11"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity12"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity13"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity14"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity15"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity16"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity17"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity18"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity19"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity20"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity21"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity22"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity23"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity24"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity25"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity26"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity27"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>
