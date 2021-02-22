@@ -36,7 +36,9 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".view.ChangeDetailsActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".view.RecipeActivity"
+        <activity android:name=".view.recipes.RecipeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.recipes.RecipeActivity2"
             android:screenOrientation="portrait"/>
     </application>
 
