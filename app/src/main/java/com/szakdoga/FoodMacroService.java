@@ -58,7 +58,7 @@ public class FoodMacroService {
                     }
                     loadData(sb.toString().trim());
                   //  loadFoodName(sb.toString().trim(),1);
-                    System.out.println("MacroService" + sb.toString().trim());
+                //    System.out.println("MacroService" + sb.toString().trim());
                 } catch (Exception e) {
 
                 }
@@ -100,9 +100,9 @@ public class FoodMacroService {
             System.out.println("foodMacro" + foodMacro.length);
 */
 
-            for (FoodMacro breakF : breakfast) {
+            /*for (FoodMacro breakF : breakfast) {
                 System.out.println("food:" + breakF.getFoodName() + " " + breakF.getKcal() + " " + breakF.getCarbohydrate() + " " + breakF.getId());
-            }
+            }*/
 
             //  System.out.println("food:" + breakfast[0].getImage() + "\n" + breakfast[0].getFoodName() + breakfast[1].getKcal() +"szar az egész"  + breakfast[1].getCarbohydrate() + "csak a lokálisat adja vissza" + breakfast[1].getId());
            /* System.out.println("food:" + lunch[27].getKcal() +"szar az egész"  + lunch[27].getCarbohydrate() + "csak a lokálisat adja vissza" + lunch[27].getId());
