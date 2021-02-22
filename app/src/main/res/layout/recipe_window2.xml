@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Tonhal steak"
+                android:textAlignment="center"
+                android:textColor="#008080"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/kesz_kaja"
+                android:textAlignment="center"
+                android:textColor="#008080"
+                android:textSize="18sp"/>
+
+            <TableLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/kcal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="2dp"
+                        android:text="@string/kcal"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/feherje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="2dp"
+                        android:text="@string/feherje"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/szenhidrat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="2dp"
+                        android:text="@string/szenhidrat"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/zsir"
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="2dp"
+                        android:text="@string/zsir"
+                        android:textAlignment="center"
+                        android:textColor="#008080"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/makro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="456"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/makro_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="4.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/makro_sz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="3.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/makro_zs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="7.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/hozzavalok"
+                android:textColor="#008080"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:id="@+id/ingredients_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </ListView>
+
+            </ScrollView>
+
+
+            <TextView
+                android:id="@+id/preparation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/elkeszites"
+                android:textColor="#008080"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/preparation_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-black"
+                android:text="5 ek olajat felhevítünk, és beleütjük a tojást úgy, hogy egybemaradjon. Lejjebb vesszük a tüzet alatta, és lassan megsütjük.
+A virslit megfőzzük.
+A sült tojást egy tányérra egymás mellé tesszük. A főtt virslit eldaraboljuk (ez lesz a szája és az orra).
+A paprikát felszeleteljük.Egy-egy szeletet a tojásra teszünk úgy, hogy a sárgája középen maradjon. Egy szeletet kettévágunk (ez lesz a szemüveg szára).
+1 db olívabogyót kettévágunk, és a tojássárgájára tesszük.
+Fodros petrezselyem lesz a haja."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
