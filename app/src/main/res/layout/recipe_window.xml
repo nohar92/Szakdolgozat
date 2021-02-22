@@ -9,11 +9,7 @@
         android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-
-
-        >
-
+        android:layout_marginTop="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +39,7 @@
                 android:text="@string/kesz_kaja"
                 android:textAlignment="center"
                 android:textColor="#008080"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <TableLayout
                 android:layout_width="350dp"
@@ -150,30 +146,37 @@
 
             </TableLayout>
 
-            <TextView
-                android:id="@+id/ingredients"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="30dp"
-                android:fontFamily="sans-serif-black"
-                android:text="@string/hozzavalok"
-                android:textColor="#008080"
-                android:textSize="20sp" />
 
-            <ScrollView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="240dp"
+                android:clickable="false"
+                android:orientation="vertical">
 
-                <ListView
-                    android:id="@+id/ingredients_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ingredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/hozzavalok"
+                    android:textColor="#008080"
+                    android:textSize="20sp" />
 
 
-                </ListView>
 
-            </ScrollView>
+                    <ListView
+                        android:id="@+id/ingredients_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+
+                       >
+
+                    </ListView>
+
+            </LinearLayout>
 
 
             <TextView
@@ -194,12 +197,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif-black"
-                android:text="5 ek olajat felhevítünk, és beleütjük a tojást úgy, hogy egybemaradjon. Lejjebb vesszük a tüzet alatta, és lassan megsütjük.
-A virslit megfőzzük.
-A sült tojást egy tányérra egymás mellé tesszük. A főtt virslit eldaraboljuk (ez lesz a szája és az orra).
-A paprikát felszeleteljük.Egy-egy szeletet a tojásra teszünk úgy, hogy a sárgája középen maradjon. Egy szeletet kettévágunk (ez lesz a szemüveg szára).
-1 db olívabogyót kettévágunk, és a tojássárgájára tesszük.
-Fodros petrezselyem lesz a haja."
+                android:text="@string/mosolygos_reggeli"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
