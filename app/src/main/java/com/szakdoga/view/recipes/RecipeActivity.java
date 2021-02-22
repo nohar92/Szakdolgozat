@@ -4,17 +4,11 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.JsonArrayRequest;
 import com.szakdoga.R;
-import com.szakdoga.model.Ingredients;
 import com.szakdoga.view.BulkingMenuOfferActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class RecipeActivity extends BulkingMenuOfferActivity {
 
