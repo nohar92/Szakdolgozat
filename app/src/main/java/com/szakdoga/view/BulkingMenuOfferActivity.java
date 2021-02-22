@@ -15,6 +15,8 @@ import com.szakdoga.R;
 import com.szakdoga.UserService;
 import com.szakdoga.model.CalculationModel;
 import com.szakdoga.model.FoodModel;
+import com.szakdoga.view.recipes.RecipeActivity;
+import com.szakdoga.view.recipes.RecipeActivity2;
 
 import java.security.SecureRandom;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -31,7 +33,6 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
     private List<FoodMacro> foodList;*/
 
     public int randCase = rand.nextInt(3);
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -52,7 +53,6 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("RANDOM:" + randCase);
 
         if (randCase == 0) {
 
@@ -82,7 +82,7 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch1 = findViewById(R.id.lunch_1);
             lunch1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity2.class);
                     startActivity(intent);
                 }
             });

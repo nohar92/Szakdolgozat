@@ -15,6 +15,7 @@ import com.szakdoga.R;
 import com.szakdoga.UserService;
 import com.szakdoga.model.CalculationModel;
 import com.szakdoga.model.FoodModel;
+import com.szakdoga.view.recipes.RecipeActivity;
 
 import java.security.SecureRandom;
 
