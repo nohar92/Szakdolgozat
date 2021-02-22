@@ -91,7 +91,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/mosolygos_reggeli" />
+                        android:src="@drawable/meggyes_zabkasa" />
 
                     <TextView
                         android:id="@+id/breakfast_name_1"
@@ -101,7 +101,7 @@
                         android:fontFamily="sans-serif-black"
                         android:maxLines="100"
                         android:scrollHorizontally="false"
-                        android:text="Mosolygós szemüveg"
+                        android:text="Meggyes zabkása"
                         android:textColor="#008080"
                         android:textSize="15sp" />
 
@@ -146,7 +146,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/paprikas_mini_pizza_sult_paradicsommal" />
+                        android:src="@drawable/tonhal_steak_lila_edeskrumplival_citromos_spenotsalataval" />
 
                     <TextView
 
@@ -154,7 +154,7 @@
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Gyümölcsrizs"
+                        android:text="Tonhal steak"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -197,14 +197,14 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/ceklas_gnocchi" />
+                        android:src="@drawable/gyros_tal" />
 
                     <TextView
                         android:id="@+id/dinner_name_1"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Avokádó reggelire"
+                        android:text="Gyros tál"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -272,7 +272,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/mosolygos_reggeli" />
+                        android:src="@drawable/bubbles_and_squeak" />
 
                     <TextView
                         android:id="@+id/breakfast_name_2"
@@ -282,7 +282,7 @@
                         android:fontFamily="sans-serif-black"
                         android:maxLines="100"
                         android:scrollHorizontally="false"
-                        android:text="Mosolygós szemüveg"
+                        android:text="Bubbles and squeak"
                         android:textColor="#008080"
                         android:textSize="15sp" />
 
@@ -327,7 +327,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/paprikas_mini_pizza_sult_paradicsommal" />
+                        android:src="@drawable/gombas_zoldseges_husgolyo" />
 
                     <TextView
 
@@ -335,7 +335,7 @@
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Gyümölcsrizs"
+                        android:text="Zöldséges húsgolyó"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -378,14 +378,14 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/ceklas_gnocchi" />
+                        android:src="@drawable/lecs_shuka" />
 
                     <TextView
                         android:id="@+id/dinner_name_2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Avokádó reggelire"
+                        android:text="Lecs-shuka"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -453,7 +453,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/mosolygos_reggeli" />
+                        android:src="@drawable/zoldseges_daralt_husos_reggeli" />
 
                     <TextView
                         android:id="@+id/breakfast_name_3"
@@ -463,7 +463,7 @@
                         android:fontFamily="sans-serif-black"
                         android:maxLines="100"
                         android:scrollHorizontally="false"
-                        android:text="Mosolygós szemüveg"
+                        android:text="Zöldséges-húsos reggeli"
                         android:textColor="#008080"
                         android:textSize="15sp" />
 
@@ -508,7 +508,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/paprikas_mini_pizza_sult_paradicsommal" />
+                        android:src="@drawable/szilvas_gomboc" />
 
                     <TextView
 
@@ -516,7 +516,7 @@
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Gyümölcsrizs"
+                        android:text="Szilvás gombóc"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -559,14 +559,14 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/ceklas_gnocchi" />
+                        android:src="@drawable/fustolt_sajtos_tejszines_csirkemell" />
 
                     <TextView
                         android:id="@+id/dinner_name_3"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Avokádó reggelire"
+                        android:text="Tejszínes csirkemell"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />

@@ -68,10 +68,10 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/first_breakfast_offer1"
+                        android:id="@+id/first_breakfast_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
-                        android:layout_gravity="center"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
@@ -84,24 +84,24 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/breakfast_1_offer1"
+                        android:id="@+id/breakfast_1_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/mosolygos_reggeli" />
+                        android:src="@drawable/reggeli_pite_tojassal_baconnel" />
 
                     <TextView
-                        android:id="@+id/breakfast_name_1_offer1"
+                        android:id="@+id/breakfast_name_1_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:ellipsize="none"
                         android:fontFamily="sans-serif-black"
                         android:maxLines="100"
                         android:scrollHorizontally="false"
-                        android:text="Mosolygós szemüveg"
+                        android:text="Tojásos omlett"
                         android:textColor="#008080"
                         android:textSize="15sp" />
 
@@ -123,11 +123,11 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/firs_lunch_offer1"
+                        android:id="@+id/firs_lunch_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
-                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -139,22 +139,22 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/lunch_1_offer1"
+                        android:id="@+id/lunch_1_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/paprikas_mini_pizza_sult_paradicsommal" />
+                        android:src="@drawable/baconbe_tekert_csibefalat_kolessel" />
 
                     <TextView
 
-                        android:id="@+id/lunch_name_1_offer1"
+                        android:id="@+id/lunch_name_1_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text='Paprikás mini "pizza"'
+                        android:text="Csibefalat baconben"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -175,11 +175,11 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/first_dinner_offer1"
+                        android:id="@+id/first_dinner_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
-                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -190,21 +190,21 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/dinner_1_offer1"
+                        android:id="@+id/dinner_1_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/fokhagymas" />
+                        android:src="@drawable/aszalt_szilvas_pulykamell" />
 
                     <TextView
-                        android:id="@+id/dinner_name_1_offer1"
+                        android:id="@+id/dinner_name_1_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Grillezett csirkemell"
+                        android:text="Szilvás pulykamell"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -249,11 +249,11 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/second_breakfast_offer1"
+                        android:id="@+id/second_breakfast_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
-                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -265,24 +265,24 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/breakfast_2_offer1"
+                        android:id="@+id/breakfast_2_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/gyumolcsrizs" />
+                        android:src="@drawable/villamgyors_low_carb_reggeli" />
 
                     <TextView
-                        android:id="@+id/breakfast_name_2_offer1"
+                        android:id="@+id/breakfast_name_2_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:ellipsize="none"
                         android:fontFamily="sans-serif-black"
                         android:maxLines="100"
                         android:scrollHorizontally="false"
-                        android:text="Gyümölcsrizs"
+                        android:text="low-carb reggeli"
                         android:textColor="#008080"
                         android:textSize="15sp" />
 
@@ -304,11 +304,11 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/second_lunch_offer1"
+                        android:id="@+id/second_lunch_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
-                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -320,22 +320,22 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/lunch_2_offer1"
+                        android:id="@+id/lunch_2_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/libacomb_vele_sult_oszi_izekkel" />
+                        android:src="@drawable/mexikoi_chilisbab" />
 
                     <TextView
 
-                        android:id="@+id/lunch_name_2_offer1"
+                        android:id="@+id/lunch_name_2_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Brassói aprópecsenye"
+                        android:text="Mexikói chilisbab"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -356,11 +356,11 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/second_dinner_offer1"
+                        android:id="@+id/second_dinner_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
-                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -371,21 +371,21 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/dinner_2_offer1"
+                        android:id="@+id/dinner_2_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/fuszeres_brassoi_apropecsenye" />
+                        android:src="@drawable/citromos_parolt_csirkemell" />
 
                     <TextView
-                        android:id="@+id/dinner_name_2_offer1"
+                        android:id="@+id/dinner_name_2_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Avokádó reggelire"
+                        android:text="Citromos csirkemell"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -430,11 +430,11 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/third_breakfast_offer1"
+                        android:id="@+id/third_breakfast_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
-                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -446,24 +446,24 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/breakfast_3_offer1"
+                        android:id="@+id/breakfast_3_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/avokado_reggelire" />
+                        android:src="@drawable/almas_zabpelyhes_amerikai_palacsinta" />
 
                     <TextView
-                        android:id="@+id/breakfast_name_3_offer1"
+                        android:id="@+id/breakfast_name_3_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:ellipsize="none"
                         android:fontFamily="sans-serif-black"
                         android:maxLines="100"
                         android:scrollHorizontally="false"
-                        android:text="Avokádó reggelire"
+                        android:text="Amcsi palacsinta"
                         android:textColor="#008080"
                         android:textSize="15sp" />
 
@@ -485,11 +485,11 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/third_lunch_offer1"
+                        android:id="@+id/third_lunch_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
-                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -501,22 +501,22 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/lunch_3_offer1"
+                        android:id="@+id/lunch_3_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/zoldseges_sajtos_karajszeletek" />
+                        android:src="@drawable/tejszines_parmezanos_csirke" />
 
                     <TextView
 
-                        android:id="@+id/lunch_name_3_offer1"
+                        android:id="@+id/lunch_name_3_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Sajtos karajszeletek"
+                        android:text="Parmezános csirke"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
@@ -537,11 +537,11 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/third_dinner_offer1"
+                        android:id="@+id/third_dinner_offer2"
+                        android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
                         android:text="Mennyiség: 700 g"
                         android:textAlignment="center"
-                        android:layout_gravity="center"
                         android:textColor="#008080"
                         android:textSize="16sp" />
 
@@ -552,21 +552,21 @@
                     android:minHeight="130dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/dinner_3_offer1"
+                        android:id="@+id/dinner_3_offer2"
                         android:layout_width="50dp"
                         android:layout_height="120dp"
                         android:layout_marginStart="15dp"
                         android:clickable="true"
                         android:focusable="true"
                         android:paddingTop="10dp"
-                        android:src="@drawable/sonkas_mozzarellas_vacsorasalata" />
+                        android:src="@drawable/ceklas_gnocchi" />
 
                     <TextView
-                        android:id="@+id/dinner_name_3_offer1"
+                        android:id="@+id/dinner_name_3_offer2"
                         android:layout_column="1"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-black"
-                        android:text="Sonkás-mozzarellás saláta"
+                        android:text="Céklás gnocchi"
                         android:textAlignment="center"
                         android:textColor="#008080"
                         android:textSize="15sp" />
