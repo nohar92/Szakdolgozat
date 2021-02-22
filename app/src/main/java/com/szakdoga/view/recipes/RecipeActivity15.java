@@ -10,7 +10,7 @@ import com.szakdoga.view.BulkingMenuOfferActivity;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class RecipeActivity2 extends BulkingMenuOfferActivity {
+public class RecipeActivity15 extends BulkingMenuOfferActivity {
 
     private ListView ingredients;
     private ArrayAdapter<String> listAdapter ;
@@ -18,12 +18,12 @@ public class RecipeActivity2 extends BulkingMenuOfferActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recipe_window2);
+        setContentView(R.layout.recipe_window15);
 
         ingredients = findViewById(R.id.ingredients_list);
 
-        String[] ingr = new String[]{"0.5 dl víz", "5 dkg rizs", "1.3 dl tej", "1 csomag vaníliás cukor", "1 dl habtejszín",
-                                     "0.5 csomag habfixáló", "1 ek cukor", "5 dkg eper", "5 dkg szeder", "1.3 dkg vaj"};
+        String[] ingr = new String[]{"200 g burgonya", "50 g finomliszt", "0.5 db M-es tojás", "0.5 csipet só",
+                                     "20 g vaj", "25 g zsemlemorzsa", "20 g porcukor", "1 g fahéj", "182 g szilva"};
 
         ArrayList<String> ingrList = new ArrayList<String>(Arrays.asList(ingr));
         listAdapter = new ArrayAdapter<String>(this,R.layout.ingredient_rows,ingrList);
