@@ -44,6 +44,7 @@ import com.szakdoga.view.recipes.RecipeActivity8;
 import com.szakdoga.view.recipes.RecipeActivity9;
 
 import java.security.SecureRandom;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class BulkingMenuOfferActivity extends FunctionsActivity {
@@ -78,7 +79,6 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         if (randCase == 0) {
 
 
@@ -237,8 +237,7 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             // showing the back button in action bar
             assert actionBar != null;
             actionBar.setDisplayHomeAsUpEnabled(true);
-        }
-        else if (randCase == 1) {
+        } else if (randCase == 1) {
             setContentView(R.layout.menu_offer_window1);
 
             FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
@@ -397,8 +396,7 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
             assert actionBar != null;
             actionBar.setDisplayHomeAsUpEnabled(true);
 
-        }
-        else if (randCase == 2){
+        } else if (randCase == 2) {
             setContentView(R.layout.menu_offer_window2);
 
             FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
