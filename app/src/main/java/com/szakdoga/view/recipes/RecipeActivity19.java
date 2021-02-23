@@ -22,7 +22,8 @@ public class RecipeActivity19 extends BulkingMenuOfferActivity {
 
         ingredients = findViewById(R.id.ingredients_list);
 
-        String[] ingr = new String[]{"225 g csirkemell filé (kisebb)", "só ízlés szerint"," bors ízlés szerint"," 2 gerezd fokhagyma", "0.8 dl tej", "1 ek kókuszolaj"};
+        String[] ingr = new String[]{"225 g csirkemell filé (kisebb)", "só ízlés szerint"," bors ízlés szerint",
+                                     "2 gerezd fokhagyma", "0.8 dl tej", "1 ek kókuszolaj"};
 
         ArrayList<String> ingrList = new ArrayList<String>(Arrays.asList(ingr));
         listAdapter = new ArrayAdapter<String>(this,R.layout.ingredient_rows,ingrList);

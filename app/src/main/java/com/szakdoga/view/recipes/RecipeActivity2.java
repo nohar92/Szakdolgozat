@@ -22,8 +22,9 @@ public class RecipeActivity2 extends BulkingMenuOfferActivity {
 
         ingredients = findViewById(R.id.ingredients_list);
 
-        String[] ingr = new String[]{"0.5 dl víz", "5 dkg rizs", "1.3 dl tej", "1 csomag vaníliás cukor", "1 dl habtejszín",
-                                     "0.5 csomag habfixáló", "1 ek cukor", "5 dkg eper", "5 dkg szeder", "1.3 dkg vaj"};
+        String[] ingr = new String[]{"0.5 dl víz", "5 dkg rizs", "1.3 dl tej", "1 csomag vaníliás cukor",
+                                     "1 dl habtejszín", "0.5 csomag habfixáló", "1 ek cukor", "5 dkg eper",
+                                     "5 dkg szeder", "1.3 dkg vaj"};
 
         ArrayList<String> ingrList = new ArrayList<String>(Arrays.asList(ingr));
         listAdapter = new ArrayAdapter<String>(this,R.layout.ingredient_rows,ingrList);

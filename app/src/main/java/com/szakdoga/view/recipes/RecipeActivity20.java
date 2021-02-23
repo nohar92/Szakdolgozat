@@ -22,7 +22,11 @@ public class RecipeActivity20 extends BulkingMenuOfferActivity {
 
         ingredients = findViewById(R.id.ingredients_list);
 
-        String[] ingr = new String[]{"200 g sertésszűz", "33 g füstölt szalonna", "28 g vöröshagyma", "1 gerezd fokhagyma", "17 g paradicsom", "17 g paprika", "17 g zöldpaprika"," só ízlés szerint"," bors ízlés szerint", "0.2 kk őrölt fűszerkömény", "0.2 tk majoranna","0.3 tk fűszerpaprikam", "0.2 csokor petrezselyem", "200 g burognya", "2-3 ek kókuszolaj"};
+        String[] ingr = new String[]{"200 g sertésszűz", "33 g füstölt szalonna", "28 g vöröshagyma",
+                                     "1 gerezd fokhagyma", "17 g paradicsom", "17 g paprika", "17 g zöldpaprika",
+                                     "só ízlés szerint"," bors ízlés szerint", "0.2 kk őrölt fűszerkömény",
+                                     "0.2 tk majoranna","0.3 tk fűszerpaprikam", "0.2 csokor petrezselyem",
+                                     "200 g burognya", "2-3 ek kókuszolaj"};
 
         ArrayList<String> ingrList = new ArrayList<String>(Arrays.asList(ingr));
         listAdapter = new ArrayAdapter<String>(this,R.layout.ingredient_rows,ingrList);
