@@ -16,6 +16,32 @@ import com.szakdoga.UserService;
 import com.szakdoga.model.CalculationModel;
 import com.szakdoga.model.FoodModel;
 import com.szakdoga.view.recipes.RecipeActivity;
+import com.szakdoga.view.recipes.RecipeActivity10;
+import com.szakdoga.view.recipes.RecipeActivity11;
+import com.szakdoga.view.recipes.RecipeActivity12;
+import com.szakdoga.view.recipes.RecipeActivity13;
+import com.szakdoga.view.recipes.RecipeActivity14;
+import com.szakdoga.view.recipes.RecipeActivity15;
+import com.szakdoga.view.recipes.RecipeActivity16;
+import com.szakdoga.view.recipes.RecipeActivity17;
+import com.szakdoga.view.recipes.RecipeActivity18;
+import com.szakdoga.view.recipes.RecipeActivity19;
+import com.szakdoga.view.recipes.RecipeActivity2;
+import com.szakdoga.view.recipes.RecipeActivity20;
+import com.szakdoga.view.recipes.RecipeActivity21;
+import com.szakdoga.view.recipes.RecipeActivity22;
+import com.szakdoga.view.recipes.RecipeActivity23;
+import com.szakdoga.view.recipes.RecipeActivity24;
+import com.szakdoga.view.recipes.RecipeActivity25;
+import com.szakdoga.view.recipes.RecipeActivity26;
+import com.szakdoga.view.recipes.RecipeActivity27;
+import com.szakdoga.view.recipes.RecipeActivity3;
+import com.szakdoga.view.recipes.RecipeActivity4;
+import com.szakdoga.view.recipes.RecipeActivity5;
+import com.szakdoga.view.recipes.RecipeActivity6;
+import com.szakdoga.view.recipes.RecipeActivity7;
+import com.szakdoga.view.recipes.RecipeActivity8;
+import com.szakdoga.view.recipes.RecipeActivity9;
 
 import java.security.SecureRandom;
 
@@ -57,7 +83,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             // breakfast1.setImageURI();
             breakfast1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity4.class);
                     startActivity(intent);
                 }
             });
@@ -74,7 +100,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch1 = findViewById(R.id.lunch_1);
             lunch1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity13.class);
                     startActivity(intent);
                 }
             });
@@ -90,7 +116,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner1 = findViewById(R.id.dinner_1);
             dinner1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity22.class);
                     startActivity(intent);
                 }
             });
@@ -106,7 +132,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView breakfast2 = findViewById(R.id.breakfast_2);
             breakfast2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity5.class);
                     startActivity(intent);
                 }
             });
@@ -122,7 +148,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch2 = findViewById(R.id.lunch_2);
             lunch2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity14.class);
                     startActivity(intent);
                 }
             });
@@ -138,7 +164,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner2 = findViewById(R.id.dinner_2);
             dinner2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity23.class);
                     startActivity(intent);
                 }
             });
@@ -154,7 +180,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView breakfast3 = findViewById(R.id.breakfast_3);
             breakfast3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity6.class);
                     startActivity(intent);
                 }
             });
@@ -170,7 +196,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch3 = findViewById(R.id.lunch_3);
             lunch3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity15.class);
                     startActivity(intent);
                 }
             });
@@ -186,7 +212,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner3 = findViewById(R.id.dinner_3);
             dinner3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity21.class);
                     startActivity(intent);
                 }
             });
@@ -204,7 +230,9 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             // showing the back button in action bar
             assert actionBar != null;
             actionBar.setDisplayHomeAsUpEnabled(true);
-        } else if (randCase == 1) {
+        }
+        //////////////////// next case
+        else if (randCase == 1) {
             setContentView(R.layout.menu_offer_window1);
 
             FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
@@ -232,7 +260,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch1 = findViewById(R.id.lunch_1_offer1);
             lunch1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity10.class);
                     startActivity(intent);
                 }
             });
@@ -248,7 +276,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner1 = findViewById(R.id.dinner_1_offer1);
             dinner1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity19.class);
                     startActivity(intent);
                 }
             });
@@ -264,7 +292,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView breakfast2 = findViewById(R.id.breakfast_2_offer1);
             breakfast2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity2.class);
                     startActivity(intent);
                 }
             });
@@ -280,7 +308,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch2 = findViewById(R.id.lunch_2_offer1);
             lunch2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity11.class);
                     startActivity(intent);
                 }
             });
@@ -296,7 +324,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner2 = findViewById(R.id.dinner_2_offer1);
             dinner2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity20.class);
                     startActivity(intent);
                 }
             });
@@ -312,7 +340,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView breakfast3 = findViewById(R.id.breakfast_3_offer1);
             breakfast3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity3.class);
                     startActivity(intent);
                 }
             });
@@ -328,7 +356,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch3 = findViewById(R.id.lunch_3_offer1);
             lunch3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity12.class);
                     startActivity(intent);
                 }
             });
@@ -344,7 +372,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner3 = findViewById(R.id.dinner_3_offer1);
             dinner3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity24.class);
                     startActivity(intent);
                 }
             });
@@ -374,7 +402,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             // breakfast1.setImageURI();
             breakfast1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity7.class);
                     startActivity(intent);
                 }
             });
@@ -391,7 +419,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch1 = findViewById(R.id.lunch_1_offer2);
             lunch1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity16.class);
                     startActivity(intent);
                 }
             });
@@ -407,7 +435,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner1 = findViewById(R.id.dinner_1_offer2);
             dinner1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity25.class);
                     startActivity(intent);
                 }
             });
@@ -423,7 +451,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView breakfast2 = findViewById(R.id.breakfast_2_offer2);
             breakfast2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity8.class);
                     startActivity(intent);
                 }
             });
@@ -439,7 +467,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch2 = findViewById(R.id.lunch_2_offer2);
             lunch2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity17.class);
                     startActivity(intent);
                 }
             });
@@ -455,7 +483,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner2 = findViewById(R.id.dinner_2_offer2);
             dinner2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity26.class);
                     startActivity(intent);
                 }
             });
@@ -471,7 +499,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView breakfast3 = findViewById(R.id.breakfast_3_offer2);
             breakfast3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity9.class);
                     startActivity(intent);
                 }
             });
@@ -487,7 +515,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView lunch3 = findViewById(R.id.lunch_3_offer2);
             lunch3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity18.class);
                     startActivity(intent);
                 }
             });
@@ -503,7 +531,7 @@ public class CuttingMenuOfferActivity extends FunctionsActivity {
             CircleImageView dinner3 = findViewById(R.id.dinner_3_offer2);
             dinner3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                    Intent intent = new Intent(view.getContext(), RecipeActivity27.class);
                     startActivity(intent);
                 }
             });
