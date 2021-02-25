@@ -77,7 +77,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             setContentView(R.layout.menu_offer_window);
             FoodModel foodModel = new FoodModel(foodMacroService.getFoodMacro(), new CalculationModel(userService.getUser()));
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity4
             CircleImageView breakfast1 = findViewById(R.id.breakfast_1);
             // breakfast1.setImageURI();
             breakfast1.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +87,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
-
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView firstBreakfast = findViewById(R.id.first_breakfast);
             firstBreakfast.setText("Mennyiség: " + " " + foodModel.getMaintanBreakfastAmountZero1() + " g");
 
@@ -95,7 +97,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             firstBreakfastName.setText("Meggyes zabkása");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity13
             CircleImageView lunch1 = findViewById(R.id.lunch_1);
             lunch1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -104,6 +106,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView firstLunch = findViewById(R.id.firs_lunch);
             firstLunch.setText("Mennyiség: " + " " + foodModel.getMaintanLunchAmountZero1() + " g");
 
@@ -111,7 +116,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             firstLunchName.setText("Tonhal steak");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity22
             CircleImageView dinner1 = findViewById(R.id.dinner_1);
             dinner1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -120,6 +125,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView firstDinner = findViewById(R.id.first_dinner);
             firstDinner.setText("Mennyiség: " + " " + foodModel.getMaintanDinnerAmountZero1() + " g");
 
@@ -127,7 +135,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             firstDinnerName.setText("Gyros tál");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity5
             CircleImageView breakfast2 = findViewById(R.id.breakfast_2);
             breakfast2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -136,6 +144,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView secondBreakfast = findViewById(R.id.second_breakfast);
             secondBreakfast.setText("Mennyiség: " + " " + foodModel.getMaintanBreakfastAmountZero2() + " g");
 
@@ -143,7 +154,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             secondBreakfastName.setText("Bubbles and squeak");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity14
             CircleImageView lunch2 = findViewById(R.id.lunch_2);
             lunch2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -152,6 +163,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView secondLunch = findViewById(R.id.second_lunch);
             secondLunch.setText("Mennyiség: " + " " + foodModel.getMaintanLunchAmountZero2() + " g");
 
@@ -168,6 +182,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView secondDinner = findViewById(R.id.second_dinner);
             secondDinner.setText("Mennyiség: " + " " + foodModel.getMaintanDinnerAmountZero2() + " g");
 
@@ -175,7 +192,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             secondDinnerName.setText("Lecs-shuka");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity6
             CircleImageView breakfast3 = findViewById(R.id.breakfast_3);
             breakfast3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -184,6 +201,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView thirdBreakfast = findViewById(R.id.third_breakfast);
             thirdBreakfast.setText("Mennyiség: " + " " + foodModel.getMaintanBreakfastAmountZero3() + " g");
 
@@ -191,7 +211,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             thirdBreakfastName.setText("Zöldséges-darált hús");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity15
             CircleImageView lunch3 = findViewById(R.id.lunch_3);
             lunch3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -200,6 +220,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView thirdLunch = findViewById(R.id.third_lunch);
             thirdLunch.setText("Mennyiség: " + " " + foodModel.getMaintanLunchAmountZero3() + " g");
 
@@ -207,7 +230,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             thirdLunchName.setText("Szilvás gombóc");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity21
             CircleImageView dinner3 = findViewById(R.id.dinner_3);
             dinner3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -216,6 +239,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView thirdDinner = findViewById(R.id.third_dinner);
             thirdDinner.setText("Mennyiség: " + " " + foodModel.getMaintanDinnerAmountZero3() + " g");
 
@@ -229,6 +255,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             // showing the back button in action bar
             assert actionBar != null;
             actionBar.setDisplayHomeAsUpEnabled(true);
+
         } else if (randCase == 1) {
             setContentView(R.layout.menu_offer_window1);
 
@@ -245,7 +272,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
-
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView firstBreakfast = findViewById(R.id.first_breakfast_offer1);
             firstBreakfast.setText("Mennyiség: " + " " + foodModel.getMaintanBreakfastAmountFirst1() + " g");
 
@@ -253,7 +282,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             firstBreakfastName.setText("Mosolygós szemüveg");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity10
             CircleImageView lunch1 = findViewById(R.id.lunch_1_offer1);
             lunch1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -262,6 +291,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView firstLunch = findViewById(R.id.firs_lunch_offer1);
             firstLunch.setText("Mennyiség: " + " " + foodModel.getMaintanLunchAmountFirst1() + " g");
 
@@ -269,7 +301,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             firstLunchName.setText("Paprikás mini 'pizza'");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity19
             CircleImageView dinner1 = findViewById(R.id.dinner_1_offer1);
             dinner1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -278,6 +310,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView firstDinner = findViewById(R.id.first_dinner_offer1);
             firstDinner.setText("Mennyiség: " + " " + foodModel.getMaintanDinnerAmountFirst1() + " g");
 
@@ -285,7 +320,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             firstDinnerName.setText("Grillezett csirkemell");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity2
             CircleImageView breakfast2 = findViewById(R.id.breakfast_2_offer1);
             breakfast2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
@@ -294,6 +329,9 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
                 }
             });
 
+            /*
+             *  Set foodAmount to textview using FoodModel's method
+             */
             TextView secondBreakfast = findViewById(R.id.second_breakfast_offer1);
             secondBreakfast.setText("Mennyiség: " + " " + foodModel.getMaintanBreakfastAmountFirst2() + " g");
 
@@ -301,7 +339,7 @@ public class MaintanMenuOfferActivity extends FunctionsActivity {
             secondBreakfastName.setText("Gyümölcsrizs");
 
 
-            // Create button and its clickListener to step forward RecipeActivity
+            // Create button and its clickListener to step forward RecipeActivity11
             CircleImageView lunch2 = findViewById(R.id.lunch_2_offer1);
             lunch2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {

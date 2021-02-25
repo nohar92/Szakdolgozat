@@ -32,7 +32,13 @@ public class UserService {
 
     public User getUser() { return user; }
 
-
+    /**
+     *  Get userDetails from database.
+     *  Using php script which create a json object from that data. Loop through it
+     *  and append it to a String object
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     public void getDetails() throws ExecutionException, InterruptedException {
 
         class GetJSON extends AsyncTask<Void, Void, Void> {
@@ -61,7 +67,11 @@ public class UserService {
 
     }
 
-
+    /**
+     * Load data to user
+     * @param json data from database getting by getDetails() method
+     * @throws JSONException
+     */
     private void loadData(String json) throws JSONException {
 
         ObjectMapper objectMapper = new JsonMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);

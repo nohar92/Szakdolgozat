@@ -18,18 +18,18 @@ import com.szakdoga.R;
 public class MainActivity extends AppCompatActivity {
 
 
-    private final String TAG = this.getClass().getSimpleName();
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
+        /*
+           Create start button and its clickListener to  step forward to FunctionsActivity or DetailsActivity
+         */
 
-        Button calculate = findViewById(R.id.calculate);
-        calculate.setOnClickListener(new View.OnClickListener() {
+        Button start = findViewById(R.id.calculate);
+        start.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 if (isDataBaseEmpty()) {
                     Intent intent = new Intent(view.getContext(), DetailsActivity.class);
@@ -42,7 +42,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
+    /**
+     * Check the database via php script
+     *
+     * @return true if database empty
+     */
     public boolean isDataBaseEmpty() {
 
         StringRequest request = new StringRequest(Request.Method.POST, "https://uncloudy-refurbishm.000webhostapp.com/isDatabaseEmpty.php",
@@ -53,18 +57,14 @@ public class MainActivity extends AppCompatActivity {
 
                             //    Toast.makeText(MainActivity.this, response, Toast.LENGTH_LONG).show();
                         } else {
-
                             // Toast.makeText(MainActivity.this, response + "Üres ez most", Toast.LENGTH_LONG).show();
                         }
                     }
                 }, error -> Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_LONG).show()) {
-
-
         };
 
         // RequestQueue queue = MySingleton.getInstance(this.getApplicationContext()).getRequestQueue();
         MySingleton.getInstance(this).addToRequestQueue(request);
-
 
         return false;
     }

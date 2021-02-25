@@ -15,10 +15,13 @@ public class FunctionsActivity extends MainActivity {
         setContentView(R.layout.functions_window);
 
 
-        // Create calculation button and its clickListener to step forward CalculationsActivity
+        /**
+         * Create calculation button and its clickListener to step forward CalculationsActivity
+         */
+
         Button calculation = findViewById(R.id.calculationsButton);
-        calculation.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
+        calculation.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), CalculationsActivity.class);
                 startActivity(intent);
 
@@ -26,16 +29,18 @@ public class FunctionsActivity extends MainActivity {
         });
 
 
+        /**
+         * Create changeDetails button and its clickListener to step forward ChangeDetailsActivity
+         */
 
-        // Create changeDetails button and its clickListener to step forward ChangeDetailsActivity
         Button changeDetails = findViewById(R.id.changeDetailsButton);
-        changeDetails.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
+        changeDetails.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), ChangeDetailsActivity.class);
                 startActivity(intent);
 
             }
         });
-}
+    }
 
 }

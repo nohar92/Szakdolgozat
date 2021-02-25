@@ -39,7 +39,10 @@ public class DetailsActivity extends MainActivity {
         txtHip = findViewById(R.id.hip);
         txtActivityLv = findViewById(R.id.activity_level);
 
-        // Create save button and its clickListener to save datas and step forward to FunctionsActivity
+        /*
+         * Create save button and its clickListener to insert datas to database and step forward to FunctionsActivity
+         */
+
         saveAndForward = findViewById(R.id.save_button);
         saveAndForward.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -82,6 +85,9 @@ public class DetailsActivity extends MainActivity {
         });
     }
 
+    /**
+     * Create and show an alert window if user did not fill all the fields
+     */
     private void alertDialog() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setMessage("Töltse ki az üresen hagyott mezőt/mezőket!");
@@ -97,6 +103,9 @@ public class DetailsActivity extends MainActivity {
         alertDialog.show();
     }
 
+    /**
+     * Insert data to database with stringRequest via php script
+     */
     public void insertData() {
 
         String name = txtName.getText().toString().trim();
@@ -126,6 +135,10 @@ public class DetailsActivity extends MainActivity {
             }
         }
         ) {
+
+            /**
+             * @return A Map of parameters to be used for a POST or PUT request.
+             */
             @Override
             protected Map<String, String> getParams() {
 

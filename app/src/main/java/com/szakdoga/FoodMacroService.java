@@ -41,6 +41,13 @@ public class FoodMacroService {
     }
 
 
+    /**
+     *  Get foodDetails from database.
+     *  Using php script which create a json array from that data. Loop through it
+     *  and append it to a String object
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     public void getFoodDetails() throws ExecutionException, InterruptedException {
 
         class GetJSON extends AsyncTask<Void, Void, Void> {
@@ -85,6 +92,11 @@ public class FoodMacroService {
     }
 
 
+    /**
+     * Load data to foodMacro
+     * @param json data from database getting by getFoodDetails() method
+     * @throws JSONException
+     */
     private void loadData(String json) throws JSONException {
 
         ObjectMapper objectMapper = new JsonMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
@@ -92,22 +104,8 @@ public class FoodMacroService {
             breakfast = objectMapper.readValue(json, FoodMacro[].class);
            /* lunch = objectMapper.readValue(json,FoodMacro[].class);
             dinner = objectMapper.readValue(json,FoodMacro[].class);*/
-
             foodMacro = objectMapper.readValue(json, FoodMacro[].class);
-           /* System.out.println("break" + breakfast.length);
-            System.out.println("lunch" + lunch.length);
-            System.out.println("dinner" + dinner.length);
-            System.out.println("foodMacro" + foodMacro.length);
-*/
 
-            /*for (FoodMacro breakF : breakfast) {
-                System.out.println("food:" + breakF.getFoodName() + " " + breakF.getKcal() + " " + breakF.getCarbohydrate() + " " + breakF.getId());
-            }*/
-
-            //  System.out.println("food:" + breakfast[0].getImage() + "\n" + breakfast[0].getFoodName() + breakfast[1].getKcal() +"szar az egész"  + breakfast[1].getCarbohydrate() + "csak a lokálisat adja vissza" + breakfast[1].getId());
-           /* System.out.println("food:" + lunch[27].getKcal() +"szar az egész"  + lunch[27].getCarbohydrate() + "csak a lokálisat adja vissza" + lunch[27].getId());
-            System.out.println("food:" + dinner[28].getKcal() +"szar az egész"  + dinner[28].getCarbohydrate() + "csak a lokálisat adja vissza" + dinner[28].getId());
-            System.out.println("food:" + foodMacro[29].getKcal() +"szar az egész"  + foodMacro[29].getCarbohydrate() + "csak a lokálisat adja vissza" + foodMacro[29].getId());*/
         } catch (JsonProcessingException e) {
             //Toast.makeText(getApplicationContext(), "JsonProcessingException: Can not process json string!", Toast.LENGTH_LONG).show();
         }

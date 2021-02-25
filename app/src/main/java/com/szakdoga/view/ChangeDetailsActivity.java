@@ -25,7 +25,7 @@ import java.util.Map;
 public class ChangeDetailsActivity extends FunctionsActivity {
 
 
-    EditText txtId, txtName, txtGender, txtAge, txtWeight, txtHeight, txtNeck, txtWaist, txtHip, txtActivityLv;
+    EditText txtName, txtGender, txtAge, txtWeight, txtHeight, txtNeck, txtWaist, txtHip, txtActivityLv;
     Button back, saveAndBack;
 
 
@@ -45,7 +45,10 @@ public class ChangeDetailsActivity extends FunctionsActivity {
         txtActivityLv = findViewById(R.id.activity_level_ch);
 
 
-        // Create back button and its clickListener to step back to FunctionsActivity
+        /*
+         * Create back button and its clickListener to step back to FunctionsActivity
+         */
+
         back = findViewById(R.id.backButton);
         back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -56,7 +59,10 @@ public class ChangeDetailsActivity extends FunctionsActivity {
             }
         });
 
-        // Create saveAndBack button and its clickListener to save data and step back to FunctionsActivity
+        /*
+         * Create saveAndBack button and its clickListener to update data and step back to FunctionsActivity
+         */
+
         saveAndBack = findViewById(R.id.saveAndBackButton);
         saveAndBack.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -101,6 +107,9 @@ public class ChangeDetailsActivity extends FunctionsActivity {
 
     }
 
+    /**
+     * Create and show an alert window if user did not fill all the fields
+     */
     private void alertDialog() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setMessage("Töltse ki az üresen hagyott mezőt/mezőket!");
@@ -116,6 +125,9 @@ public class ChangeDetailsActivity extends FunctionsActivity {
         alertDialog.show();
     }
 
+    /**
+     * Update user details to database with stringRequest via php script
+     */
     public void updateData() {
 
         String id = "1";
@@ -152,6 +164,9 @@ public class ChangeDetailsActivity extends FunctionsActivity {
             }
         }) {
 
+            /**
+             * @return A Map of parameters to be used for a POST or PUT request.
+             */
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
 
