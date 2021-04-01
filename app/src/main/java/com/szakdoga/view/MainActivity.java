@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        if (response.length() > 0) {
+                        if (response.equals("Table is not empty")) {
 
                             //    Toast.makeText(MainActivity.this, response, Toast.LENGTH_LONG).show();
                         } else {

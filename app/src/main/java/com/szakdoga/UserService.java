@@ -36,8 +36,7 @@ public class UserService {
      *  Get userDetails from database.
      *  Using php script which create a json object from that data. Loop through it
      *  and append it to a String object
-     * @throws ExecutionException
-     * @throws InterruptedException
+     *
      */
     public void getDetails() throws ExecutionException, InterruptedException {
 

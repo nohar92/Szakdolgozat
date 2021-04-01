@@ -19,9 +19,13 @@ public class CalculationModel {
 
     public double bodyFat() {
         if (user.getGender().equals("férfi")) {
-            return (495 / (1.0324 - (0.19077 * (Math.log10(user.getWaist() - user.getNeck()))) + (0.15456 * (Math.log10(user.getHeight()))))) - 450;
+            return (495 / (1.0324 - (0.19077 *
+                    (Math.log10(user.getWaist() - user.getNeck()))) +
+                    (0.15456 * (Math.log10(user.getHeight()))))) - 450;
         } else {
-            return (495 / (1.29579 - (0.35004 * (Math.log10(user.getWaist() + user.getHip() - user.getNeck()))) + (0.221 * (Math.log10(user.getHeight()))))) - 450;
+            return (495 / (1.29579 - (0.35004 *
+                    (Math.log10(user.getWaist() + user.getHip() - user.getNeck()))) +
+                    (0.221 * (Math.log10(user.getHeight()))))) - 450;
         }
     }
 
@@ -36,19 +40,19 @@ public class CalculationModel {
 
 
     public double totalEnergy() {
-        double result = bmr();
+        double bmRate = bmr();
 
         switch (user.getActivityLv()) {
             case 1:
-                return result * 1.2;
+                return bmRate * 1.2;
             case 2:
-                return result * 1.375;
+                return bmRate * 1.375;
             case 3:
-                return result * 1.55;
+                return bmRate * 1.55;
             case 4:
-                return result * 1.725;
+                return bmRate * 1.725;
             case 5:
-                return result * 1.9;
+                return bmRate * 1.9;
         }
         return 0;
     }

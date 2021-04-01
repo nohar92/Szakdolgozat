@@ -94,8 +94,6 @@ public class BulkingMenuOfferActivity extends FunctionsActivity {
                     startActivity(intent);
                 }
             });
-
-
             TextView firstBreakfast = findViewById(R.id.first_breakfast);
             firstBreakfast.setText("Mennyiség: " + " " + foodModel.getBulkingBreakfastAmountZero1() + " g");
 

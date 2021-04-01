@@ -42,9 +42,9 @@ public class FoodMacroService {
 
 
     /**
-     *  Get foodDetails from database.
-     *  Using php script which create a json array from that data. Loop through it
-     *  and append it to a String object
+     * Get foodDetails from database.
+     * Using php script which create a json array from that data. Loop through it
+     * and append it to a String object
      * @throws ExecutionException
      * @throws InterruptedException
      */
@@ -78,7 +78,7 @@ public class FoodMacroService {
 
     }
 
-    private  void loadFoodName(String json, int index) throws JSONException {
+    private void loadFoodName(String json, int index) throws JSONException {
 
         JSONArray jsonArray = new JSONArray(json);
        // ArrayList<String> foodN = new ArrayList<>();
